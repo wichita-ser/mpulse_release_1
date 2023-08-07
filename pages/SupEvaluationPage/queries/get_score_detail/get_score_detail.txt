@@ -1,0 +1,4 @@
+SELECT * 
+FROM public."score_detail" 
+where evaluate_type_id = 1 and score = {{this.params.score}}
+limit 1;

@@ -1,0 +1,3 @@
+SELECT * 
+FROM public."core_value" 
+WHERE core_value_id = '{{appsmith.URL.queryParams.core_value_id}}';

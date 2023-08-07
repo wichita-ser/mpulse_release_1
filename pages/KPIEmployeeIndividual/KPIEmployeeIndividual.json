@@ -1,0 +1,68 @@
+{
+  "unpublishedPage": {
+    "name": "KPIEmployeeIndividual",
+    "slug": "kpiemployeeindividual",
+    "layouts": [
+      {
+        "viewMode": false,
+        "dsl": {
+          "widgetName": "MainContainer",
+          "backgroundColor": "none",
+          "rightColumn": 1224,
+          "snapColumns": 64,
+          "detachFromLayout": true,
+          "widgetId": "0",
+          "topRow": 0,
+          "bottomRow": 1760,
+          "containerStyle": "none",
+          "snapRows": 81,
+          "parentRowSpace": 1,
+          "type": "CANVAS_WIDGET",
+          "canExtend": true,
+          "version": 79,
+          "minHeight": 820,
+          "parentColumnSpace": 1,
+          "dynamicBindingPathList": [],
+          "leftColumn": 0
+        },
+        "layoutOnLoadActions": [
+          [
+            {
+              "id": "KPIEmployeeIndividual_get_department_kpi_list",
+              "name": "get_department_kpi_list",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "this.params.department_id",
+                "this.params.division_id"
+              ],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "KPIEmployeeIndividual_initObj.init",
+              "name": "initObj.init",
+              "collectionId": "KPIEmployeeIndividual_initObj",
+              "confirmBeforeExecute": false,
+              "pluginType": "JS",
+              "jsonPathKeys": [
+                "async function () {\n  storeValue('employeeList', []);\n  storeValue('performanceIndicatorList', []);\n  storeValue('page', \"KPIEmployeeAssign\");\n  const isLogin = await validateToken.runValidateToken();\n  if (!isLogin) {\n    return;\n  }\n  await getTeamMemberByKPIType.run();\n  await get_my_team.run({\n    'employee_id': appsmith.store.monitorEmp ? appsmith.store.monitorEmp.subordinate.employee_id : appsmith.store.jwt.employee_id\n  });\n  await get_department_kpi_list.run({\n    'department_id': appsmith.store.monitorEmp ? appsmith.store.monitorEmp.departmentId : appsmith.store.jwt.department_id,\n    'division_id': appsmith.store.monitorEmp ? appsmith.store.monitorEmp.divisionId : appsmith.store.jwt.division_id\n  });\n  await get_corporate_kpi.run();\n  await get_department_kpi.run({\n    'department_id': appsmith.store.monitorEmp ? appsmith.store.monitorEmp.departmentId : appsmith.store.jwt.department_id,\n    'division_id': appsmith.store.monitorEmp ? appsmith.store.monitorEmp.divisionId : appsmith.store.jwt.division_id\n  });\n  await get_perspective.run();\n  const initEmployeeList = helpers.transformEmployeeData([]);\n  storeValue('employeeList', initEmployeeList);\n  const empData = [];\n  getTeamMemberByKPIType.data.payload.map(item => empData.push({\n    'id': item.employee_id,\n    'name': item.employee_name,\n    'nickname': item.employee_nickname,\n    'team': item.division_name,\n    'position_name': item.position\n  }));\n  storeValue('selectOptions', empData);\n  const initData = appsmith.store.performanceIndicatorList ? appsmith.store.performanceIndicatorList : [];\n  storeValue('performanceIndicatorList', initData);\n  const perspectiveData = get_perspective.data;\n  let perspecctiveOptions;\n  perspecctiveOptions = helpers.transformPerspectiveData(perspectiveData);\n  storeValue('perspecctiveOptions', perspecctiveOptions);\n  storeValue('checkAutoEvaluate', false);\n}"
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ]
+        ],
+        "layoutOnLoadActionErrors": [],
+        "validOnPageLoadActions": true,
+        "id": "KPIEmployeeIndividual",
+        "deleted": false,
+        "policies": [],
+        "userPermissions": []
+      }
+    ],
+    "userPermissions": [],
+    "policies": [],
+    "isHidden": false
+  },
+  "deleted": false,
+  "gitSyncId": "64a41ea1c5ad8c54598cf856_64a41ea2c5ad8c54598cf8b5"
+}

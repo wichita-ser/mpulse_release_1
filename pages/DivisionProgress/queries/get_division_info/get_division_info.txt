@@ -1,0 +1,4 @@
+SELECT * 
+FROM public."office_master" 
+where office_code = '{{appsmith.URL.queryParams.divisionID}}'
+LIMIT 1;

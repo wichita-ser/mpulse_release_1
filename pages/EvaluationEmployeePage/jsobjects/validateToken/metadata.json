@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "validateToken",
+    "pageId": "EvaluationEmployeePage",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "EvaluationEmployeePage_validateToken",
+  "deleted": false,
+  "gitSyncId": "649125b34a35112df4b37a8a_649125ba4a35112df4b380d1"
+}

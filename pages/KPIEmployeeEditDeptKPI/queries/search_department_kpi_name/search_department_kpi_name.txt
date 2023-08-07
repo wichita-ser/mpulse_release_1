@@ -1,0 +1,7 @@
+SELECT dk.perspective_id, p.name as perspective, dk.department_kpi_name, ck.kpi_name as corporate_indicators, y2d.*
+FROM public."department_kpi" AS dk
+join public."year_to_department_kpi" AS y2d ON dk.department_kpi_id=y2d.department_kpi_id
+join public."perspective" AS p ON dk.perspective_id=p.perspective_id
+left join public."corporate_kpi" AS ck ON dk.corporate_kpi_id=ck.corporate_kpi_id
+where dk.department_kpi_name='{{this.params.department_kpi}}' 
+order by p.name ASC, dk.department_kpi_name asc;

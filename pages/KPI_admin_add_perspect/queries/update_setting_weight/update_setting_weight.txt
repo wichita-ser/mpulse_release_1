@@ -1,0 +1,6 @@
+UPDATE public."kpi_setting_weight" SET
+    "department_id" = '{{this.params.department_id}}',
+    "division_id" = '{{this.params.division_id}}',
+    "updated_date" = Now(),
+    "updated_by" = '{{appsmith.store.jwt.email}}'
+  WHERE "kpi_setting_weight_id" = {{this.params.kpi_setting_weight_id}};

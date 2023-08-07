@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "hideMenuServices",
+    "pageId": "PM setting",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "PM setting_hideMenuServices",
+  "deleted": false,
+  "gitSyncId": "649125b34a35112df4b37a8a_64959d5a2b16444427a134f2"
+}

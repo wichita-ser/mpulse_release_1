@@ -1,0 +1,1 @@
+SELECT * FROM public."engagement" WHERE employee_id = '{{this.params.employee_id}}' and duration_setting_id = {{appsmith.store.jwt.duration_setting_id}};

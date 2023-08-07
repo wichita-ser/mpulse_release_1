@@ -1,0 +1,20 @@
+{
+  "unpublishedCollection": {
+    "name": "MockupJS",
+    "pageId": "Login_PMS",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [
+      {
+        "name": "dataLogin",
+        "value": "[{\n  'id': 3996,\n  'employee_id': '03996',\n  'username': 'warakorn_l',\n  'password': 'Test1234!',\n  'email': 'warakorn_l@mfec.co.th',\n  'name': 'Warakorn Lertwattanapong',\n  'department': 'M-Lab',\n  'position': 'Developer',\n  'level': 'H'\n}, {\n  'id': 2955,\n  'employee_id': '02955',\n  'username': 'nawaporn',\n  'password': 'Test1234!',\n  'email': 'nawaporn_m@eusakohotmail.onmicrosoft.com',\n  'name': 'Nawaporn Manyanon',\n  'department': 'M-Lab',\n  'position': 'Tester',\n  'level': 'H'\n}, {\n  'id': 159,\n  'employee_id': '00159',\n  'username': 'natnaka',\n  'password': 'Test1234!',\n  'email': 'natnaka@eusakohotmail.onmicrosoft.com',\n  'name': 'Natnaka Sundaranaga',\n  'department': 'M-Lab',\n  'position': 'Head of M-Lab',\n  'level': 'E'\n}, {\n  'id': 2201,\n  'employee_id': '02201',\n  'username': 'sainamphung',\n  'password': 'Test1234!',\n  'email': 'sainamphung@eusakohotmail.onmicrosoft.com',\n  'name': 'Sainamphung Phanphet',\n  'department': 'M-Lab',\n  'position': 'Software Developer',\n  'level': 'G'\n}, {\n  'id': 4407,\n  'employee_id': '04407',\n  'username': 'natthida',\n  'password': 'Test1234!',\n  'email': 'natthida_k@eusakohotmail.onmicrosoft.com',\n  'name': 'Natthida Karnchanapak',\n  'department': 'People Excellence',\n  'position': 'People Business Partner Manager',\n  'level': 'E'\n}, {\n  'id': 1695,\n  'employee_id': '01695',\n  'username': 'arm',\n  'password': 'Test1234!',\n  'email': 'arm@eusakohotmail.onmicrosoft.com',\n  'name': 'Arm Sivadith',\n  'department': 'Corporate Strategy Planning and Management',\n  'position': 'Chief Strategy Officer',\n  'level': 'B'\n}, {\n  'id': 28962,\n  'employee_id': '03228',\n  'username': 'warm',\n  'password': 'Test1234!',\n  'email': 'Kittikun_m@eusakohotmail.onmicrosoft.com',\n  'name': 'Arm Sivadith',\n  'department': 'People Excellence',\n  'position': 'Senior People Business Partner',\n  'level': 'G'\n}, {\n  'id': 29679,\n  'employee_id': '01639',\n  'username': 'peaw',\n  'password': 'Test1234!',\n  'email': 'tarit@mfec.co.th',\n  'name': 'Tarit Eakpinitpittaya',\n  'department': 'People Excellence',\n  'position': 'Senior Software Developer',\n  'level': 'F'\n}]"
+      }
+    ],
+    "userPermissions": []
+  },
+  "id": "Login_PMS_MockupJS",
+  "deleted": false,
+  "gitSyncId": "649125b34a35112df4b37a8a_649125b54a35112df4b37ce4"
+}

@@ -1,0 +1,5 @@
+UPDATE public."engagement_detail" SET
+    "score" = {{this.params.score}},
+    "updated_date" = Now(),
+    "updated_by" ='{{appsmith.store.jwt.email}}'
+  WHERE "engagement_id" = {{get_my_engagement.data[0].engagement_id}} and "question" = {{this.params.question}};

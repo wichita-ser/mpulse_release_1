@@ -1,0 +1,20 @@
+{
+  "unpublishedCollection": {
+    "name": "data",
+    "pageId": "SystemSetting_duration",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [
+      {
+        "name": "durationData",
+        "value": "[{\n  id: 0,\n  process: \"Supervisor Goal Setting\",\n  startDate: \"\",\n  endDate: \"\"\n}, {\n  id: 1,\n  process: \"Employee Goal Setting\",\n  startDate: \"\",\n  endDate: \"\"\n}, {\n  id: 2,\n  process: \"Supervisor Core value Setting\",\n  startDate: \"\",\n  endDate: \"\"\n}, {\n  id: 3,\n  process: \"Employee Core value Setting\",\n  startDate: \"\",\n  endDate: \"\"\n}, {\n  id: 4,\n  process: \"Supervisor Evaluation\",\n  startDate: \"\",\n  endDate: \"\"\n}, {\n  id: 5,\n  process: \"Employee Evaluation\",\n  startDate: \"\",\n  endDate: \"\"\n}]"
+      }
+    ],
+    "userPermissions": []
+  },
+  "id": "SystemSetting_duration_data",
+  "deleted": false,
+  "gitSyncId": "649125b34a35112df4b37a8a_649125bb4a35112df4b381bb"
+}

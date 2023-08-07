@@ -1,0 +1,4 @@
+SELECT employee_id AS "id", concat(firstname_en, ' ', lastname_en) as "name", concat(firstname_th, ' ', lastname_th) as "nameTH", nickname_en as "nickname", division_name as "team", nickname_th AS "nicknameTH", position_name
+FROM public."employee" 
+WHERE supervisor_id = '{{this.params.employee_id}}'
+order by "name" ASC;

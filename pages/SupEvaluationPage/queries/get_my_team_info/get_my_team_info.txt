@@ -1,0 +1,4 @@
+SELECT * 
+FROM public."employee"
+WHERE employee_id = '{{appsmith.store.TeamMemberScore.employeeId}}'
+LIMIT 1;

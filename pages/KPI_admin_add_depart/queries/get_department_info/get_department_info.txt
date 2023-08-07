@@ -1,0 +1,4 @@
+SELECT *
+FROM public."office_master"
+where office_level = 'Department' AND office_name = '{{this.params.department_name}}'
+order by office_name ASC;

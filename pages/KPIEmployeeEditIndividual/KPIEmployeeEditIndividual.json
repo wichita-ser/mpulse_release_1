@@ -1,0 +1,57 @@
+{
+  "unpublishedPage": {
+    "name": "KPIEmployeeEditIndividual",
+    "slug": "kpiemployeeeditindividual",
+    "layouts": [
+      {
+        "viewMode": false,
+        "dsl": {
+          "widgetName": "MainContainer",
+          "backgroundColor": "none",
+          "rightColumn": 1224,
+          "snapColumns": 64,
+          "detachFromLayout": true,
+          "widgetId": "0",
+          "topRow": 0,
+          "bottomRow": 1400,
+          "containerStyle": "none",
+          "snapRows": 81,
+          "parentRowSpace": 1,
+          "type": "CANVAS_WIDGET",
+          "canExtend": true,
+          "version": 79,
+          "minHeight": 820,
+          "parentColumnSpace": 1,
+          "dynamicBindingPathList": [],
+          "leftColumn": 0
+        },
+        "layoutOnLoadActions": [
+          [
+            {
+              "id": "KPIEmployeeEditIndividual_initObj.init",
+              "name": "initObj.init",
+              "collectionId": "KPIEmployeeEditIndividual_initObj",
+              "confirmBeforeExecute": false,
+              "pluginType": "JS",
+              "jsonPathKeys": [
+                "async function () {\n  storeValue('page', \"KPIEmployeeEditIndividual\");\n  const isLogin = await validateToken.runValidateToken();\n  if (!isLogin) {\n    return;\n  }\n  await get_perspective.run();\n  await getKPIByEmployeeID.run();\n  await get_department_kpi_list.run({\n    'department_id': appsmith.store.monitorEmp ? appsmith.store.monitorEmp.departmentId : appsmith.store.jwt.department_id,\n    'division_id': appsmith.store.monitorEmp ? appsmith.store.monitorEmp.divisionId : appsmith.store.jwt.division_id\n  });\n  await get_department_kpi.run({\n    'department_id': appsmith.store.monitorEmp ? appsmith.store.monitorEmp.departmentId : appsmith.store.jwt.department_id,\n    'division_id': appsmith.store.monitorEmp ? appsmith.store.monitorEmp.divisionId : appsmith.store.jwt.division_id\n  });\n  await get_corporate_kpi.run();\n  const perspectiveData = get_perspective.data;\n  const perspecctiveOptions = helpers.transformPerspectiveData(perspectiveData);\n  storeValue('perspecctiveOptions', perspecctiveOptions);\n  storeValue(\"assignEmployeeIndividual\", helpers.initTrnsformDataKPI());\n  storeValue(\"addEmployeeIndividual\", []);\n  storeValue(\"updateEmployeeIndividual\", []);\n  storeValue(\"deleteEmployeeIndividual\", []);\n}"
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ]
+        ],
+        "layoutOnLoadActionErrors": [],
+        "validOnPageLoadActions": true,
+        "id": "KPIEmployeeEditIndividual",
+        "deleted": false,
+        "policies": [],
+        "userPermissions": []
+      }
+    ],
+    "userPermissions": [],
+    "policies": [],
+    "isHidden": false
+  },
+  "deleted": false,
+  "gitSyncId": "64a41ea1c5ad8c54598cf856_64a41ea3c5ad8c54598cf940"
+}

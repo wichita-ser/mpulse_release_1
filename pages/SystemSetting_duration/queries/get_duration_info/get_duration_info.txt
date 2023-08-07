@@ -1,0 +1,3 @@
+SELECT * 
+FROM public."duration_setting" 
+where duration_setting_id = {{appsmith.URL.queryParams.duration_setting_id}};

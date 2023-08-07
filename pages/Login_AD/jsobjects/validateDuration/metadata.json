@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "validateDuration",
+    "pageId": "Login_AD",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "Login_AD_validateDuration",
+  "deleted": false,
+  "gitSyncId": "649125b34a35112df4b37a8a_649917572b16444427a16455"
+}

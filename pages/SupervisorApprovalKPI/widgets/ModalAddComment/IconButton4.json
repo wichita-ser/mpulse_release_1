@@ -1,0 +1,43 @@
+{
+    "boxShadow": "none",
+    "mobileBottomRow": 9,
+    "widgetName": "IconButton4",
+    "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+    "displayName": "Icon Button",
+    "iconSVG": "/static/media/icon.1a0c634ac75f9fa6b6ae7a8df882a3ba.svg",
+    "searchTags": [
+        "click",
+        "submit"
+    ],
+    "topRow": 5,
+    "bottomRow": 9,
+    "parentRowSpace": 10,
+    "type": "ICON_BUTTON_WIDGET",
+    "hideCard": false,
+    "mobileRightColumn": 5,
+    "animateLoading": true,
+    "parentColumnSpace": 9.46875,
+    "dynamicTriggerPathList": [],
+    "leftColumn": 5,
+    "dynamicBindingPathList": [
+        {"key": "buttonColor"},
+        {"key": "borderRadius"}
+    ],
+    "isDisabled": true,
+    "key": "yxfvlnnpuo",
+    "isDeprecated": false,
+    "rightColumn": 9,
+    "iconName": "info-sign",
+    "widgetId": "ez2njrvc4l",
+    "minWidth": 50,
+    "isVisible": true,
+    "version": 1,
+    "parentId": "omg3tnz943",
+    "renderMode": "CANVAS",
+    "isLoading": false,
+    "mobileTopRow": 5,
+    "responsiveBehavior": "hug",
+    "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+    "mobileLeftColumn": 1,
+    "buttonVariant": "TERTIARY"
+}

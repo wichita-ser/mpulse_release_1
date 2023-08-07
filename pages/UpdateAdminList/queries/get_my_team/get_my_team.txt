@@ -1,0 +1,4 @@
+SELECT *, CONCAT(firstname_en, ' ', lastname_en) as name 
+FROM public."employee" 
+WHERE employee_id = '04660' OR division_id = 'PE01000' OR division_id = 'PE05000'
+ORDER BY firstname_en;

@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "hideMenuServices",
+    "pageId": "KBIEvaluationPage",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "KBIEvaluationPage_hideMenuServices",
+  "deleted": false,
+  "gitSyncId": "649125b34a35112df4b37a8a_64959d1d2b16444427a134ee"
+}

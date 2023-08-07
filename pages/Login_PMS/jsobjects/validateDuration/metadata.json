@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "validateDuration",
+    "pageId": "Login_PMS",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "Login_PMS_validateDuration",
+  "deleted": false,
+  "gitSyncId": "649125b34a35112df4b37a8a_6499124d2b16444427a16447"
+}

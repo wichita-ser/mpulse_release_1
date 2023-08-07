@@ -1,0 +1,4 @@
+SELECT * 
+FROM public."engagement_detail" 
+WHERE engagement_id = {{get_my_engagement.data[0].engagement_id}} 
+order by score ASC;

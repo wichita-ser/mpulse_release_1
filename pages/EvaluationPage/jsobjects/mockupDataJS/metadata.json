@@ -1,0 +1,28 @@
+{
+  "unpublishedCollection": {
+    "name": "mockupDataJS",
+    "pageId": "EvaluationPage",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [
+      {
+        "name": "evaluation360",
+        "value": "[{\n  \"id\": 20201152,\n  \"name\": \"Tammanoon\",\n  \"team\": \"M-LAB\",\n  \"status\": \"Pending\"\n}, {\n  \"id\": 20201153,\n  \"name\": \"Nawaporn\",\n  \"team\": \"M-LAB\",\n  \"status\": \"Submitted\"\n}, {\n  \"id\": 20201150,\n  \"name\": \"Phennapa\",\n  \"team\": \"M-LAB\",\n  \"status\": \"Submitted\"\n}]"
+      },
+      {
+        "name": "evaluationMe",
+        "value": "[{\n  \"id\": 20201151,\n  \"name\": \"Sainamphung\",\n  \"email\": \"sainamphung@mfec.co.th\",\n  \"status\": \"Pending\"\n}, {\n  \"id\": 20201153,\n  \"name\": \"Nawaporn\",\n  \"email\": \"nawaporn@mfec.co.th\",\n  \"status\": \"Submitted\"\n}, {\n  \"id\": 20201154,\n  \"name\": \"Tanawat\",\n  \"email\": \"tanawat@mfec.co.th\",\n  \"status\": \"Pending\"\n}]"
+      },
+      {
+        "name": "subOrdinate",
+        "value": "[{\n  \"id\": 20201151,\n  \"name\": \"Sainamphung\",\n  \"kpi_status\": \"Submitted\",\n  \"core_status\": \"Pending\",\n  \"evaluated_status\": \"Submitted\"\n}, {\n  \"id\": 20201153,\n  \"name\": \"Nawaporn\",\n  \"kpi_status\": \"Pending\",\n  \"core_status\": \"Pending\",\n  \"evaluated_status\": \"Pending\"\n}, {\n  \"id\": 20201154,\n  \"name\": \"Tanawat\",\n  \"kpi_status\": \"Submitted\",\n  \"core_status\": \"Submitted\",\n  \"evaluated_status\": \"Submitted\"\n}]"
+      }
+    ],
+    "userPermissions": []
+  },
+  "id": "EvaluationPage_mockupDataJS",
+  "deleted": false,
+  "gitSyncId": "649125b34a35112df4b37a8a_649125b94a35112df4b37ffa"
+}

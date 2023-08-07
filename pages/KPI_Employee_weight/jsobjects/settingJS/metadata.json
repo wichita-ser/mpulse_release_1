@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "settingJS",
+    "pageId": "KPI_Employee_weight",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "KPI_Employee_weight_settingJS",
+  "deleted": false,
+  "gitSyncId": "649125b34a35112df4b37a8a_6494846f2b16444427a0fb04"
+}

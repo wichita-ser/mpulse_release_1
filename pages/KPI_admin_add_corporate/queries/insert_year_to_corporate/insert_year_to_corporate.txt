@@ -1,0 +1,2 @@
+INSERT INTO public."year_to_corporate_kpi" ("corporate_kpi_id", "year", "target", "measurements", "created_date", "created_by", "updated_date", "updated_by")
+  VALUES ({{this.params.corporate_kpi_id}}, {{appsmith.store.jwt.year}}, '{{this.params.item.target.trim()}}', '{{this.params.item.measurements.trim()}}', Now(), '{{appsmith.store.jwt.email}}', Now(), '{{appsmith.store.jwt.email}}');

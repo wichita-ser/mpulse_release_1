@@ -1,0 +1,24 @@
+{
+  "unpublishedCollection": {
+    "name": "data",
+    "pageId": "KPI_Employee",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [
+      {
+        "name": "departmentKPIModalData",
+        "value": "[{\n  \"Perspective\": \"Profitability\",\n  \"Department KPI\": \"Net Profit (NP)\",\n  \"Target\": \"\",\n  \"Score1 (Below, <90%)\": \"\",\n  \"Score2 (Partially Meet, 90-99%)\": \"\",\n  \"Score3 (Meet, 100%)\": \"\",\n  \"Score4 (Exceed, 101-110%)\": \"\",\n  \"Score5 (Outstanding, 111-120%)\": \"\",\n  \"Measurements\": \"\",\n  \"Weight (%)\": \"\"\n}, {\n  \"Perspective\": \"Profitability\",\n  \"Department KPI\": \"Net Profit (NP)\",\n  \"Target\": \"\",\n  \"Score1 (Below, <90%)\": \"\",\n  \"Score2 (Partially Meet, 90-99%)\": \"\",\n  \"Score3 (Meet, 100%)\": \"\",\n  \"Score4 (Exceed, 101-110%)\": \"\",\n  \"Score5 (Outstanding, 111-120%)\": \"\",\n  \"Measurements\": \"\",\n  \"Weight (%)\": \"\"\n}, {\n  \"Perspective\": \"Resource Performance\",\n  \"Department KPI\": \"% Project on the commitment\",\n  \"Target\": \"\",\n  \"Score1 (Below, <90%)\": \"\",\n  \"Score2 (Partially Meet, 90-99%)\": \"\",\n  \"Score3 (Meet, 100%)\": \"\",\n  \"Score4 (Exceed, 101-110%)\": \"\",\n  \"Score5 (Outstanding, 111-120%)\": \"\",\n  \"Measurements\": \"\",\n  \"Weight (%)\": \"\"\n}]"
+      },
+      {
+        "name": "corporateKPI",
+        "value": "[{\n  \"Perspective\": \"Profitability\",\n  \"Department_KPI\": \"Net Profit (NP)\"\n}, {\n  \"Perspective\": \"Profitability\",\n  \"Department_KPI\": \"% Gross Profit Growth\"\n}, {\n  \"Perspective\": \"Profitability\",\n  \"Department_KPI\": \"% Growth\"\n}, {\n  \"Perspective\": \"Resource Performance\",\n  \"Department_KPI\": \"% Project on the commitment\"\n}, {\n  \"Perspective\": \"Resource Performance\",\n  \"Department_KPI\": \"% Project on Budget\"\n}, {\n  \"Perspective\": \"Strategic conformance rating\",\n  \"Department_KPI\": \"xxx\"\n}]"
+      }
+    ],
+    "userPermissions": []
+  },
+  "id": "KPI_Employee_data",
+  "deleted": false,
+  "gitSyncId": "649125b34a35112df4b37a8a_649125bb4a35112df4b38197"
+}

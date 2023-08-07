@@ -1,0 +1,5 @@
+SELECT em.employee_id, CONCAT(em.firstname_en,' ',em.lastname_en) as employee_name,
+(SELECT status_from_supervisor from public."kpi_evaluate" ke where ke.employee_id = em.employee_id) AS kpi_status,
+(SELECT status from public."core_value" cv where cv.employee_id = em.employee_id) AS core_status
+FROM public."employee" em
+where em.supervisor_id = '{{this.params.employee_id}}';

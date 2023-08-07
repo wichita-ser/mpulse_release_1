@@ -1,0 +1,15 @@
+UPDATE public."year_to_department_kpi" SET
+    "measurements" = '{{this.params.item.Measurement}}',
+    "score_1" = '{{this.params.item.Score1}}',
+    "score_2" = '{{this.params.item.Score2}}',
+    "score_3" = '{{this.params.item.Score3}}',
+    "score_4" = '{{this.params.item.Score4}}',
+    "score_5" = '{{this.params.item.Score5}}',
+    "target" = '{{this.params.item.Target}}',
+    "updated_date" = Now(),
+    "updated_by" = '{{appsmith.store.jwt.email}}',
+    "department_id" = '{{this.params.department_id}}',
+    "division_id" = '{{this.params.division_id}}',
+    "weight" = '{{this.params.item.Weight}}',
+		"auto_eva_from" = '{{this.params.item['Auto Evaluate']}}'
+  WHERE "department_kpi_id" = {{this.params.item.id}};

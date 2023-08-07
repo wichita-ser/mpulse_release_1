@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "validateDuration",
+    "pageId": "LandingGetToken",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "LandingGetToken_validateDuration",
+  "deleted": false,
+  "gitSyncId": "649125b34a35112df4b37a8a_649915152b16444427a1644f"
+}

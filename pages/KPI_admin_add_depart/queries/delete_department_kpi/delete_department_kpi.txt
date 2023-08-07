@@ -1,0 +1,2 @@
+DELETE FROM public."department_kpi"
+  WHERE department_kpi_id = {{this.params.department_kpi_id}};

@@ -1,0 +1,57 @@
+{
+  "unpublishedPage": {
+    "name": "SelfEvaluationIndividualPage",
+    "slug": "selfevaluationindividualpage",
+    "layouts": [
+      {
+        "viewMode": false,
+        "dsl": {
+          "widgetName": "MainContainer",
+          "backgroundColor": "none",
+          "rightColumn": 1224,
+          "snapColumns": 64,
+          "detachFromLayout": true,
+          "widgetId": "0",
+          "topRow": 0,
+          "bottomRow": 1600,
+          "containerStyle": "none",
+          "snapRows": 81,
+          "parentRowSpace": 1,
+          "type": "CANVAS_WIDGET",
+          "canExtend": true,
+          "version": 79,
+          "minHeight": 820,
+          "parentColumnSpace": 1,
+          "dynamicBindingPathList": [],
+          "leftColumn": 0
+        },
+        "layoutOnLoadActions": [
+          [
+            {
+              "id": "SelfEvaluationIndividualPage_initObj.onPageLoad",
+              "name": "initObj.onPageLoad",
+              "collectionId": "SelfEvaluationIndividualPage_initObj",
+              "confirmBeforeExecute": false,
+              "pluginType": "JS",
+              "jsonPathKeys": [
+                "async function () {\n  storeValue('page', \"SelfEvaluationIndividualPage\");\n  const isLogin = await validateToken.runValidateToken();\n  if (!isLogin) {\n    return;\n  }\n  storeValue('selfEvaluateIndividual', null);\n  await get_self_evaluate.run({\n    'employee_id': appsmith.store.monitorEmp ? appsmith.store.monitorEmp.subordinate.employee_id : appsmith.store.jwt.employee_id\n  });\n  await get_individual_evaluate_detail.run({\n    'kpi_evaluate_id': get_self_evaluate.data[0].kpi_evaluate_id,\n    'employee_id': appsmith.store.monitorEmp ? appsmith.store.monitorEmp.subordinate.employee_id : appsmith.store.jwt.employee_id\n  });\n  if (!appsmith.store.selfEvaluateIndividual) {\n    const dataEvaluateDetailKPI = [];\n    for (let i = 0; i < get_individual_evaluate_detail.data.length; i++) {\n      dataEvaluateDetailKPI.push({\n        'no': i + 1,\n        'kpi_evaluate_detail_id': get_individual_evaluate_detail.data[i].detail_id,\n        'perspective': get_individual_evaluate_detail.data[i].perspective,\n        'kpi_name': get_individual_evaluate_detail.data[i].department_kpi_name ? get_individual_evaluate_detail.data[i].department_kpi_name : get_individual_evaluate_detail.data[i].individual_kpi_name,\n        'target': get_individual_evaluate_detail.data[i].target,\n        'measurement': get_individual_evaluate_detail.data[i].measurement,\n        'weight': get_individual_evaluate_detail.data[i].weight,\n        'score_1': get_individual_evaluate_detail.data[i].score_1,\n        'score_2': get_individual_evaluate_detail.data[i].score_2,\n        'score_3': get_individual_evaluate_detail.data[i].score_3,\n        'score_4': get_individual_evaluate_detail.data[i].score_4,\n        'score_5': get_individual_evaluate_detail.data[i].score_5,\n        'weight_individual_kpi': get_individual_evaluate_detail.data[i].weight_individual_kpi,\n        'score': get_individual_evaluate_detail.data[i].score ? get_individual_evaluate_detail.data[i].score : 0,\n        'result': get_individual_evaluate_detail.data[i].result\n      });\n    }\n    storeValue('selfEvaluateIndividual', {\n      'kpi_evaluate_id': get_self_evaluate.data[0].kpi_evaluate_id,\n      'current_choice': 0,\n      'dataEvaluateDetailKPI': dataEvaluateDetailKPI,\n      'status': get_self_evaluate.data[0].status\n    });\n  }\n}"
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ]
+        ],
+        "layoutOnLoadActionErrors": [],
+        "validOnPageLoadActions": true,
+        "id": "SelfEvaluationIndividualPage",
+        "deleted": false,
+        "policies": [],
+        "userPermissions": []
+      }
+    ],
+    "userPermissions": [],
+    "policies": [],
+    "isHidden": false
+  },
+  "deleted": false,
+  "gitSyncId": "64a41ea1c5ad8c54598cf856_64a41ea1c5ad8c54598cf879"
+}

@@ -1,0 +1,20 @@
+UPDATE public."duration_setting" SET
+    "year" = '{{SelectYear.selectedOptionValue}}',
+    "start_date" = '{{moment(SelectStart.selectedDate).format('YYYY-MM-DD')}}',
+    "end_date" = '{{moment(SelectEnd.selectedDate).format('YYYY-MM-DD')}}',
+    "supervisor_goal_setting_start_date" = '{{moment(SupGoalSettingStart.selectedDate).format('YYYY-MM-DD')}}',
+    "supervisor_goal_setting_end_date" = '{{moment(SupGoalSettingEnd.selectedDate).format('YYYY-MM-DD')}}',
+    "employee_goal_setting_start_date" = '{{moment(EmGoalSettingStart.selectedDate).format('YYYY-MM-DD')}}',
+    "employee_goal_setting_end_date" = '{{moment(EmGoalSettingEnd.selectedDate).format('YYYY-MM-DD')}}',
+    "supervisor_core_setting_start_date" = {{SupCoreSettingStart.selectedDate ? `'${moment(SupCoreSettingStart.selectedDate).format('YYYY-MM-DD')}'`:null}},
+    "supervisor_core_setting_end_date" = {{SupCoreSettingEnd.selectedDate ? `'${moment(SupCoreSettingEnd.selectedDate).format('YYYY-MM-DD')}'`:null}},
+    "employee_core_setting_start_date" = {{EmCoreSettingStart.selectedDate ? `'${moment(EmCoreSettingStart.selectedDate).format('YYYY-MM-DD')}'`:null}},
+    "employee_core_setting_end_date" = {{EmCoreSettingEnd.selectedDate ? `'${moment(EmCoreSettingEnd.selectedDate).format('YYYY-MM-DD')}'`:null}},
+    "supervisor_evaluate_setting_start_date" = '{{moment(SupEvaluationStart.selectedDate).format('YYYY-MM-DD')}}',
+    "supervisor_evaluate_setting_end_date" = '{{moment(SupEvaluationEnd.selectedDate).format('YYYY-MM-DD')}}',
+    "employee_evaluate_setting_start_date" = '{{moment(EmEvaluationStart.selectedDate).format('YYYY-MM-DD')}}',
+    "employee_evaluate_setting_end_date" = '{{moment(EmEvaluationStartEnd.selectedDate).format('YYYY-MM-DD')}}',
+    "evaluate_round" = '{{SelectRound.selectedOptionValue.trim()}}',
+    "updated_date" = Now(),
+    "updated_by" = '{{appsmith.store.jwt.email}}'
+  WHERE "duration_setting_id" = {{appsmith.URL.queryParams.duration_setting_id}};

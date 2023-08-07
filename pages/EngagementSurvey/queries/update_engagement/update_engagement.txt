@@ -1,0 +1,7 @@
+UPDATE public."engagement" SET
+    "status" = 'Submitted',
+    "comment" = '{{InputComment.text.trim()}}',
+    "subjective" = '{{InputSubjective.text.trim()}}',
+    "updated_date" = Now(),
+    "updated_by" ='{{appsmith.store.jwt.email}}'
+  WHERE "engagement_id" = {{get_my_engagement.data[0].engagement_id}};

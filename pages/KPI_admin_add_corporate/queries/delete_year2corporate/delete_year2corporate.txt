@@ -1,0 +1,2 @@
+DELETE FROM public."year_to_corporate_kpi"
+  WHERE corporate_kpi_id = {{this.params.corporate_kpi_id}}; 

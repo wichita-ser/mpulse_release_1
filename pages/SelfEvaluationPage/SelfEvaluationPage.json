@@ -1,0 +1,57 @@
+{
+  "unpublishedPage": {
+    "name": "SelfEvaluationPage",
+    "slug": "selfevaluationpage",
+    "layouts": [
+      {
+        "viewMode": false,
+        "dsl": {
+          "widgetName": "MainContainer",
+          "backgroundColor": "none",
+          "rightColumn": 1224,
+          "snapColumns": 64,
+          "detachFromLayout": true,
+          "widgetId": "0",
+          "topRow": 0,
+          "bottomRow": 1290,
+          "containerStyle": "none",
+          "snapRows": 81,
+          "parentRowSpace": 1,
+          "type": "CANVAS_WIDGET",
+          "canExtend": true,
+          "version": 79,
+          "minHeight": 820,
+          "parentColumnSpace": 1,
+          "dynamicBindingPathList": [],
+          "leftColumn": 0
+        },
+        "layoutOnLoadActions": [
+          [
+            {
+              "id": "SelfEvaluationPage_initJS.onPageLoad",
+              "name": "initJS.onPageLoad",
+              "collectionId": "SelfEvaluationPage_initJS",
+              "confirmBeforeExecute": false,
+              "pluginType": "JS",
+              "jsonPathKeys": [
+                "async function () {\n  storeValue('page', \"SelfEvaluationPage\");\n  const isLogin = await validateToken.runValidateToken();\n  if (!isLogin) {\n    return;\n  }\n  await get_self_evaluate.run({\n    'employee_id': appsmith.store.monitorEmp ? appsmith.store.monitorEmp.subordinate.employee_id : appsmith.store.jwt.employee_id\n  });\n  await get_department_evaluate_detail.run({\n    'employee_id': appsmith.store.monitorEmp ? appsmith.store.monitorEmp.subordinate.employee_id : appsmith.store.jwt.employee_id\n  });\n  await get_individual_evaluate_detail.run({\n    'employee_id': appsmith.store.monitorEmp ? appsmith.store.monitorEmp.subordinate.employee_id : appsmith.store.jwt.employee_id\n  });\n  console.log('get_self_evaluate', get_self_evaluate.data);\n  console.log('get_department_evaluate_detail', get_department_evaluate_detail.data);\n}"
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ]
+        ],
+        "layoutOnLoadActionErrors": [],
+        "validOnPageLoadActions": true,
+        "id": "SelfEvaluationPage",
+        "deleted": false,
+        "policies": [],
+        "userPermissions": []
+      }
+    ],
+    "userPermissions": [],
+    "policies": [],
+    "isHidden": false
+  },
+  "deleted": false,
+  "gitSyncId": "64a41ea1c5ad8c54598cf856_64a41ea4c5ad8c54598cfac3"
+}

@@ -1,0 +1,2 @@
+INSERT INTO public."department_kpi" ("department_kpi_name", "perspective_id", "corporate_kpi_id", "created_date", "updated_date", "created_by", "updated_by")
+  VALUES ('{{this.params.item['Department KPI']}}', {{this.params.perspective_id}}, {{this.params.corporate_kpi_id}}, Now(), Now(), '{{appsmith.store.jwt.email}}', '{{appsmith.store.jwt.email}}');

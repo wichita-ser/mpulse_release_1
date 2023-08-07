@@ -1,0 +1,5 @@
+SELECT * FROM public."duration_setting" 
+
+ORDER BY duration_setting_id DESC
+ LIMIT {{ Table3.pageSize }} 
+ offset {{ (Table3.pageNo - 1) * Table3.pageSize }};

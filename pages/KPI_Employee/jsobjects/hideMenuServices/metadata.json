@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "hideMenuServices",
+    "pageId": "KPI_Employee",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "KPI_Employee_hideMenuServices",
+  "deleted": false,
+  "gitSyncId": "649125b34a35112df4b37a8a_6495a4342b16444427a1354d"
+}

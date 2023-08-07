@@ -1,0 +1,20 @@
+SELECT emp.employee_id, CONCAT(emp.firstname_en, ' ', emp.lastname_en) as emp_name,emp.email,
+(
+	SELECT string_agg(comp.company_name, ', ')
+	FROM admins_to_company a2c
+	JOIN company comp ON a2c.company_id=comp.company_id 
+	WHERE ad.admin_id=a2c.admin_id
+	GROUP BY ad.admin_id
+	LIMIT 1
+) AS company,
+(
+	SELECT string_agg (dep.office_name, ', ')
+	FROM admins_to_department a2d
+	JOIN office_master dep ON a2d.department_id=CONCAT(dep.company ,'-', dep.office_code)
+	WHERE ad.admin_id=a2d.admin_id
+	GROUP BY a2d.admin_id
+	LIMIT 1
+) AS department
+FROM public."admins" ad
+left join public."employee" emp on ad.employee_id = emp.employee_id
+order by emp_name ASC;

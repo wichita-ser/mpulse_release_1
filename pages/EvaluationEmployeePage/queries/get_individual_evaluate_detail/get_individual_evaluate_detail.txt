@@ -1,0 +1,6 @@
+SELECT ked.kpi_evaluate_id as id, per.name as perspective, ked.individual_kpi_name as kpi, ked.measurement, ked.weight, ked.score as rating, ke.weight_individual_kpi, ked.score_from_supervisor, ke.total_individual_kpi, ke.total_individual_kpi_from_supervisor
+FROM public."kpi_evaluate_detail" ked
+JOIN  public."kpi_evaluate" ke on ked.kpi_evaluate_id = ke.kpi_evaluate_id
+LEFT JOIN  public."perspective" per on ked.perspective_id = per.perspective_id
+WHERE kpi_type = 'Individual' and ke.employee_id = '{{appsmith.URL.queryParams.employeeId}}'
+order by ked.kpi_evaluate_detail_id ASC;

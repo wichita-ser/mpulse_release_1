@@ -1,0 +1,6 @@
+SELECT ked.kpi_evaluate_id as id, per.name as perspective, ked.target as kpi, ked.measurement, ked.weight, ked.score as rating, ke.weight_individual_kpi, ke.total_individual_kpi, ked.individual_kpi_name
+FROM public."kpi_evaluate_detail" ked
+JOIN  public."kpi_evaluate" ke on ked.kpi_evaluate_id = ke.kpi_evaluate_id
+LEFT JOIN  public."perspective" per on ked.perspective_id = per.perspective_id
+WHERE kpi_type = 'Individual' and ke.employee_id = '{{this.params.employee_id}}'
+order by ked.kpi_evaluate_detail_id ASC;

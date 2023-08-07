@@ -1,0 +1,2 @@
+INSERT INTO public."core_value_detail" ("core_value_id", "choice", "score", "evalutor_id", "created_date", "created_by")
+  VALUES ({{get_core_value.data[0].core_value_id}}, {{this.params.choice}}, 0, '{{this.params.employee_id}}', Now(), '{{appsmith.store.jwt.email}}');

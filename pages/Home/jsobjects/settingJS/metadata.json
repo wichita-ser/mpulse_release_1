@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "settingJS",
+    "pageId": "Home",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "Home_settingJS",
+  "deleted": false,
+  "gitSyncId": "649125b34a35112df4b37a8a_6491f1714a35112df4b3a76d"
+}

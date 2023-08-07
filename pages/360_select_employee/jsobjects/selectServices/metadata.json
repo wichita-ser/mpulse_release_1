@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "selectServices",
+    "pageId": "360_select_employee",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "360_select_employee_selectServices",
+  "deleted": false,
+  "gitSyncId": "649125b34a35112df4b37a8a_649125b74a35112df4b37ead"
+}

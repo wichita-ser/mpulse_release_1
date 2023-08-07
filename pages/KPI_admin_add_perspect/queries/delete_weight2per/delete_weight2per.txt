@@ -1,0 +1,2 @@
+DELETE FROM public."weight_to_perspective_setting"
+  WHERE kpi_setting_weight_id = {{this.params.kpi_setting_weight_id}};

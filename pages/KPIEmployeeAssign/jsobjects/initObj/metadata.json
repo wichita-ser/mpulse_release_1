@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "initObj",
+    "pageId": "KPIEmployeeAssign",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "KPIEmployeeAssign_initObj",
+  "deleted": false,
+  "gitSyncId": "649125b34a35112df4b37a8a_649125bc4a35112df4b3825d"
+}

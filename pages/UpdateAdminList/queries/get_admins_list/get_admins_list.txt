@@ -1,0 +1,19 @@
+SELECT ad.admin_id, emp.id, emp.employee_id, CONCAT(emp.firstname_en, ' ', emp.lastname_en) as emp_name, emp.mobile_no,emp.email,
+(
+	SELECT ARRAY_AGG (a2c.company_id)
+	FROM admins_to_company a2c
+	WHERE ad.admin_id=a2c.admin_id
+	GROUP BY a2c.admin_id
+	LIMIT 1
+) AS company,
+(
+	SELECT ARRAY_AGG (a2d.department_id)
+	FROM admins_to_department a2d
+	JOIN office_master dep ON a2d.department_id=CONCAT(dep.company ,'-', dep.office_code)
+	WHERE ad.admin_id=a2d.admin_id
+	GROUP BY a2d.admin_id
+	LIMIT 1
+) AS department
+FROM public."admins" ad
+left join public."employee" emp on ad.employee_id = emp.employee_id
+order by emp_name ASC;

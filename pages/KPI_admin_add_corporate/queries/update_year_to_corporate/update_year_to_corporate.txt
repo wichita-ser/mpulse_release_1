@@ -1,0 +1,6 @@
+UPDATE public."year_to_corporate_kpi" SET
+    "target" = '{{this.params.item.target.trim()}}',
+    "measurements" = '{{this.params.item.measurements.trim()}}',
+    "updated_date" = Now(),
+    "updated_by" = '{{appsmith.store.jwt.email}}'
+  WHERE "corporate_kpi_id" = {{this.params.corporate_kpi_id}};

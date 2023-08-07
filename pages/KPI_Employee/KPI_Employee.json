@@ -1,0 +1,57 @@
+{
+  "unpublishedPage": {
+    "name": "KPI_Employee",
+    "slug": "kpi-employee",
+    "layouts": [
+      {
+        "viewMode": false,
+        "dsl": {
+          "widgetName": "MainContainer",
+          "backgroundColor": "none",
+          "rightColumn": 1224,
+          "snapColumns": 64,
+          "detachFromLayout": true,
+          "widgetId": "0",
+          "topRow": 0,
+          "bottomRow": 920,
+          "containerStyle": "none",
+          "snapRows": 81,
+          "parentRowSpace": 1,
+          "type": "CANVAS_WIDGET",
+          "canExtend": true,
+          "version": 79,
+          "minHeight": 820,
+          "parentColumnSpace": 1,
+          "dynamicBindingPathList": [],
+          "leftColumn": 0
+        },
+        "layoutOnLoadActions": [
+          [
+            {
+              "id": "KPI_Employee_initObj.init",
+              "name": "initObj.init",
+              "collectionId": "KPI_Employee_initObj",
+              "confirmBeforeExecute": false,
+              "pluginType": "JS",
+              "jsonPathKeys": [
+                "async function () {\n  storeValue('page', \"KPI_Employee\");\n  const isLogin = await validateToken.runValidateToken();\n  if (!isLogin) {\n    return;\n  }\n  await getTeamKPIEvaluation.run({\n    'employee_id': appsmith.store.monitorEmp ? appsmith.store.monitorEmp.subordinate.employee_id : appsmith.store.jwt.employee_id\n  });\n  await getTeamKPI.run({\n    'employee_id': appsmith.store.monitorEmp ? appsmith.store.monitorEmp.subordinate.employee_id : appsmith.store.jwt.employee_id\n  });\n  await get_corporate_kpi.run();\n  await get_department_kpi.run({\n    'department_id': appsmith.store.monitorEmp ? appsmith.store.monitorEmp.departmentId : appsmith.store.jwt.department_id,\n    'division_id': appsmith.store.monitorEmp ? appsmith.store.monitorEmp.divisionId : appsmith.store.jwt.division_id\n  });\n  if (appsmith.store.pmEmployeeId) {\n    storeValue('default_assign_tab', 'emp_kpi_list');\n    await getKPIByEmployeeID.run({\n      'employee_id': appsmith.store.pmEmployeeId\n    });\n  }\n  removeValue('departmentKPIModalData');\n  removeValue('coporateKPIModalData');\n}"
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ]
+        ],
+        "layoutOnLoadActionErrors": [],
+        "validOnPageLoadActions": true,
+        "id": "KPI_Employee",
+        "deleted": false,
+        "policies": [],
+        "userPermissions": []
+      }
+    ],
+    "userPermissions": [],
+    "policies": [],
+    "isHidden": false
+  },
+  "deleted": false,
+  "gitSyncId": "64a41ea1c5ad8c54598cf856_64a41ea4c5ad8c54598cfa57"
+}

@@ -1,0 +1,7 @@
+SELECT department_kpi.department_kpi_name, ked.kpi_evaluate_id as id, per.name as perspective, ked.target as target , ked.measurement, ked.weight, ked.score as rating, ke.weight_department_kpi, ke.total_department_kpi, ked.score_from_supervisor, ke.total_department_kpi_from_supervisor
+FROM public."kpi_evaluate_detail" ked
+JOIN department_kpi on department_kpi.department_kpi_id = ked.department_kpi_id
+JOIN  public."kpi_evaluate" ke on ked.kpi_evaluate_id = ke.kpi_evaluate_id
+LEFT JOIN  public."perspective" per on department_kpi.perspective_id = per.perspective_id
+WHERE kpi_type = 'Department' and ke.employee_id = '{{appsmith.URL.queryParams.employeeId}}'
+order by ked.kpi_evaluate_detail_id ASC;

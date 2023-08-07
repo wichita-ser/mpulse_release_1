@@ -1,0 +1,1 @@
+SELECT * FROM public."kpi_setting_weight" order by kpi_setting_weight_id DESC LIMIT 1;

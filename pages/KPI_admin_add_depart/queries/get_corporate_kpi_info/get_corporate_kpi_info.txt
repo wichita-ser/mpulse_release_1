@@ -1,0 +1,4 @@
+SELECT * 
+FROM public."corporate_kpi" 
+where kpi_name = '{{this.params.kpi_name}}'
+LIMIT 1;

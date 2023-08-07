@@ -1,0 +1,3 @@
+SELECT COUNT(*) AS total
+FROM public."kpi_evaluate_detail" 
+where kpi_type='{{this.params.kpi_type}}' and kpi_evaluate_id={{appsmith.store.TeamMemberScore.kpi_evaluate_id}} and score_from_supervisor = 0;

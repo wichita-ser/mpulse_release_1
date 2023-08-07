@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "hideMenuServices",
+    "pageId": "Home",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "Home_hideMenuServices",
+  "deleted": false,
+  "gitSyncId": "649125b34a35112df4b37a8a_64957bff2b16444427a12d7c"
+}

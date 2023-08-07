@@ -1,0 +1,69 @@
+{
+  "unpublishedPage": {
+    "name": "360EvaluateTeamForm",
+    "slug": "360evaluateteamform",
+    "layouts": [
+      {
+        "viewMode": false,
+        "dsl": {
+          "widgetName": "MainContainer",
+          "backgroundColor": "none",
+          "rightColumn": 1224,
+          "snapColumns": 64,
+          "detachFromLayout": true,
+          "widgetId": "0",
+          "topRow": 0,
+          "bottomRow": 1730,
+          "containerStyle": "none",
+          "snapRows": 50,
+          "parentRowSpace": 1,
+          "type": "CANVAS_WIDGET",
+          "canExtend": true,
+          "version": 79,
+          "minHeight": 520,
+          "parentColumnSpace": 1,
+          "dynamicBindingPathList": [],
+          "leftColumn": 0
+        },
+        "layoutOnLoadActions": [
+          [
+            {
+              "id": "360EvaluateTeamForm_initObj.onPageLoad",
+              "name": "initObj.onPageLoad",
+              "collectionId": "360EvaluateTeamForm_initObj",
+              "confirmBeforeExecute": false,
+              "pluginType": "JS",
+              "jsonPathKeys": [
+                "async function () {\n  storeValue('page', \"360EvaluateTeamForm\");\n  const isLogin = await validateToken.runValidateToken();\n  if (!isLogin) {\n    return;\n  }\n  await get_core_value.run();\n  await get_core_value_detail.run({\n    'employee_id': appsmith.store.monitorEmp ? appsmith.store.monitorEmp.subordinate.employee_id : appsmith.store.jwt.employee_id\n  });\n  await get_my_team_info.run();\n}"
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ],
+          [
+            {
+              "id": "360EvaluateTeamForm_get_my_team_info",
+              "name": "get_my_team_info",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "appsmith.URL.queryParams.employeeId"
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ]
+        ],
+        "layoutOnLoadActionErrors": [],
+        "validOnPageLoadActions": true,
+        "id": "360EvaluateTeamForm",
+        "deleted": false,
+        "policies": [],
+        "userPermissions": []
+      }
+    ],
+    "userPermissions": [],
+    "policies": [],
+    "isHidden": false
+  },
+  "deleted": false,
+  "gitSyncId": "64a41ea1c5ad8c54598cf856_64a41ea1c5ad8c54598cf86d"
+}

@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "initObj",
+    "pageId": "SystemSetting",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "SystemSetting_initObj",
+  "deleted": false,
+  "gitSyncId": "649125b34a35112df4b37a8a_649125bb4a35112df4b3818c"
+}

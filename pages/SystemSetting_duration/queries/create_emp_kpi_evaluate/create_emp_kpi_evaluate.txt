@@ -1,0 +1,3 @@
+INSERT INTO public."kpi_evaluate" ( "duration_setting_id", "status", "created_date", "updated_date", "created_by", "updated_by", "weight_department_kpi", "weight_individual_kpi", "employee_id", "status_from_supervisor")
+
+  VALUES ({{this.params.duration_setting_id}}, 'Pending', Now(), Now(), '{{appsmith.store.jwt.email}}', '{{appsmith.store.jwt.email}}', {{this.params.weight.weight_department_kpi}}, {{this.params.weight.weight_individual_kpi}}, '{{this.params.employee_id}}', 'Pending');

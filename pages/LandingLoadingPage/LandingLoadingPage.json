@@ -1,0 +1,58 @@
+{
+  "unpublishedPage": {
+    "name": "LandingLoadingPage",
+    "slug": "landingloadingpage",
+    "layouts": [
+      {
+        "viewMode": false,
+        "dsl": {
+          "widgetName": "MainContainer",
+          "backgroundColor": "none",
+          "rightColumn": 1224,
+          "snapColumns": 64,
+          "detachFromLayout": true,
+          "widgetId": "0",
+          "topRow": 0,
+          "bottomRow": 820,
+          "containerStyle": "none",
+          "snapRows": 81,
+          "parentRowSpace": 1,
+          "type": "CANVAS_WIDGET",
+          "canExtend": true,
+          "version": 79,
+          "minHeight": 830,
+          "parentColumnSpace": 1,
+          "dynamicBindingPathList": [],
+          "leftColumn": 0
+        },
+        "layoutOnLoadActions": [
+          [
+            {
+              "id": "LandingLoadingPage_initObj.init",
+              "name": "initObj.init",
+              "collectionId": "LandingLoadingPage_initObj",
+              "clientSideExecution": true,
+              "confirmBeforeExecute": false,
+              "pluginType": "JS",
+              "jsonPathKeys": [
+                "async function () {\n  console.log('appsmith.URL.queryParams.test', appsmith.URL.queryParams.test);\n  if (appsmith.URL.queryParams.page === \"getToken\") {}\n  if (!appsmith.store.token || !appsmith.store.refreshToken) {} else {\n    const validateResult = initObj.validateToken();\n    if (validateResult) {} else {}\n  }\n}"
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ]
+        ],
+        "layoutOnLoadActionErrors": [],
+        "validOnPageLoadActions": true,
+        "id": "LandingLoadingPage",
+        "deleted": false,
+        "policies": [],
+        "userPermissions": []
+      }
+    ],
+    "userPermissions": [],
+    "policies": [],
+    "isHidden": false
+  },
+  "deleted": false,
+  "gitSyncId": "64a41ea1c5ad8c54598cf856_64a41ea1c5ad8c54598cf871"
+}

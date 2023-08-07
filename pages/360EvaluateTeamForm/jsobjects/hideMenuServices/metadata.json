@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "hideMenuServices",
+    "pageId": "360EvaluateTeamForm",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "360EvaluateTeamForm_hideMenuServices",
+  "deleted": false,
+  "gitSyncId": "649125b34a35112df4b37a8a_64959e0a2b16444427a134f6"
+}

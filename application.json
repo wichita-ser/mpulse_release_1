@@ -1,0 +1,177 @@
+{
+  "pages": [
+    {
+      "id": "LandingRefreshPage",
+      "isDefault": false
+    },
+    {
+      "id": "DivisionProgress",
+      "isDefault": false
+    },
+    {
+      "id": "SupervisorApprovalKPI",
+      "isDefault": false
+    },
+    {
+      "id": "360_select_employee",
+      "isDefault": false
+    },
+    {
+      "id": "Login_PMS",
+      "isDefault": false
+    },
+    {
+      "id": "360EvaluateTeamForm",
+      "isDefault": false
+    },
+    {
+      "id": "360EvaluateForm",
+      "isDefault": false
+    },
+    {
+      "id": "360EvaluteForm_peer",
+      "isDefault": false
+    },
+    {
+      "id": "LandingLoadingPage",
+      "isDefault": false
+    },
+    {
+      "id": "KPI_admin_add_depart",
+      "isDefault": false
+    },
+    {
+      "id": "SelfEvaluationIndividualPage",
+      "isDefault": false
+    },
+    {
+      "id": "KPIEmployeeEditDeptKPI",
+      "isDefault": false
+    },
+    {
+      "id": "EvaluationEmployeePage",
+      "isDefault": false
+    },
+    {
+      "id": "EvaluationPage",
+      "isDefault": false
+    },
+    {
+      "id": "UpdateAdminList",
+      "isDefault": false
+    },
+    {
+      "id": "KPI_admin_add_perspect",
+      "isDefault": false
+    },
+    {
+      "id": "SupervisorApproval",
+      "isDefault": false
+    },
+    {
+      "id": "360_overview",
+      "isDefault": false
+    },
+    {
+      "id": "KPIEmployeeIndividual",
+      "isDefault": false
+    },
+    {
+      "id": "KBIEvaluationPage",
+      "isDefault": false
+    },
+    {
+      "id": "Home",
+      "isDefault": false
+    },
+    {
+      "id": "KPIEmployeeEditIndividual",
+      "isDefault": false
+    },
+    {
+      "id": "SystemSetting",
+      "isDefault": false
+    },
+    {
+      "id": "EngagementSurvey",
+      "isDefault": false
+    },
+    {
+      "id": "SupEvaluationPage",
+      "isDefault": false
+    },
+    {
+      "id": "SelfEvaluationDepartmentPage",
+      "isDefault": false
+    },
+    {
+      "id": "LandingGetToken",
+      "isDefault": false
+    },
+    {
+      "id": "Summary",
+      "isDefault": false
+    },
+    {
+      "id": "PM setting",
+      "isDefault": false
+    },
+    {
+      "id": "Login_AD",
+      "isDefault": true
+    },
+    {
+      "id": "EmployeeGoalSetting",
+      "isDefault": false
+    },
+    {
+      "id": "SystemSetting_duration",
+      "isDefault": false
+    },
+    {
+      "id": "KPI_Admin",
+      "isDefault": false
+    },
+    {
+      "id": "KPIEmployeeAssign",
+      "isDefault": false
+    },
+    {
+      "id": "KPI_Employee",
+      "isDefault": false
+    },
+    {
+      "id": "KPI_admin_add_corporate",
+      "isDefault": false
+    },
+    {
+      "id": "SelfEvaluationPage",
+      "isDefault": false
+    },
+    {
+      "id": "KPI_Employee_weight",
+      "isDefault": false
+    }
+  ],
+  "viewMode": false,
+  "appIsExample": false,
+  "unreadCommentThreads": 0,
+  "clonedFromApplicationId": "64a3e038c5ad8c54598cf01b",
+  "unpublishedApplicationDetail": {
+    "navigationSetting": {}
+  },
+  "color": "#ECECEC",
+  "icon": "bus",
+  "unpublishedAppLayout": {
+    "type": "DESKTOP"
+  },
+  "publishedAppLayout": {
+    "type": "DESKTOP"
+  },
+  "unpublishedCustomJSLibs": [],
+  "publishedCustomJSLibs": [],
+  "evaluationVersion": 2,
+  "applicationVersion": 2,
+  "isManualUpdate": false,
+  "deleted": false
+}

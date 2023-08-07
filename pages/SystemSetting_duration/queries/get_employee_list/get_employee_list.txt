@@ -1,0 +1,4 @@
+SELECT e.* 
+FROM public."employee" e
+WHERE e.level!='A'
+ORDER BY e.employee_id ASC;

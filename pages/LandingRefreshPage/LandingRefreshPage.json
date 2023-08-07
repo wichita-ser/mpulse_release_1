@@ -1,0 +1,57 @@
+{
+  "unpublishedPage": {
+    "name": "LandingRefreshPage",
+    "slug": "landingrefreshpage",
+    "layouts": [
+      {
+        "viewMode": false,
+        "dsl": {
+          "widgetName": "MainContainer",
+          "backgroundColor": "none",
+          "rightColumn": 1224,
+          "snapColumns": 64,
+          "detachFromLayout": true,
+          "widgetId": "0",
+          "topRow": 0,
+          "bottomRow": 700,
+          "containerStyle": "none",
+          "snapRows": 81,
+          "parentRowSpace": 1,
+          "type": "CANVAS_WIDGET",
+          "canExtend": true,
+          "version": 79,
+          "minHeight": 830,
+          "parentColumnSpace": 1,
+          "dynamicBindingPathList": [],
+          "leftColumn": 0
+        },
+        "layoutOnLoadActions": [
+          [
+            {
+              "id": "LandingRefreshPage_initPage.init",
+              "name": "initPage.init",
+              "collectionId": "LandingRefreshPage_initPage",
+              "confirmBeforeExecute": false,
+              "pluginType": "JS",
+              "jsonPathKeys": [
+                "async function () {\n  console.log('This is Landing Refresh Page', appsmith.URL.queryParams.company);\n  storeValue('company', appsmith.URL.queryParams.company);\n  const currentPage = appsmith.store.page;\n  console.log('go to page', currentPage);\n  if (currentPage) {\n    navigateTo(currentPage);\n  } else {\n    navigateTo(\"Home\");\n  }\n}"
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ]
+        ],
+        "layoutOnLoadActionErrors": [],
+        "validOnPageLoadActions": true,
+        "id": "LandingRefreshPage",
+        "deleted": false,
+        "policies": [],
+        "userPermissions": []
+      }
+    ],
+    "userPermissions": [],
+    "policies": [],
+    "isHidden": false
+  },
+  "deleted": false,
+  "gitSyncId": "64a41ea1c5ad8c54598cf856_64a41ea1c5ad8c54598cf85b"
+}

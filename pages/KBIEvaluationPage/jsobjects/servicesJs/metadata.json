@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "servicesJs",
+    "pageId": "KBIEvaluationPage",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "KBIEvaluationPage_servicesJs",
+  "deleted": false,
+  "gitSyncId": "649125b34a35112df4b37a8a_649125b74a35112df4b37ec9"
+}

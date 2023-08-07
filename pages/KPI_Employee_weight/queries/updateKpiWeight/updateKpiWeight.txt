@@ -1,0 +1,1 @@
+{ "payload": [ { "department_kpi_weight": {{InputDepWeight.text}}, "employee_id": "{{table_emp_kpi_list.triggeredRow.employee_id}}", "individual_kpi_weight": {{InputIndWeight.text}} } ]}

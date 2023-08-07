@@ -1,0 +1,20 @@
+{
+  "unpublishedCollection": {
+    "name": "data",
+    "pageId": "SupervisorApprovalKPI",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [
+      {
+        "name": "employee",
+        "value": "{\n  \"id\": \"01154\",\n  \"name\": \"Nawaporn Manyanon\",\n  \"nickname\": \"Au\",\n  \"nameTH\": \"นวพร มะยานนท์\",\n  \"nicknameTH\": \"อุ\",\n  \"email\": \"nawaporn@gmail.com\",\n  \"team\": \"M-Lab\",\n  \"KPI\": [{\n    \"id\": 1,\n    \"Perspective\": 'Profitability',\n    \"Individual KPI\": 'own KPI ',\n    \"Target\": '50%',\n    \"Measurements\": 'measurement1',\n    \"Weight\": '30%',\n    \"Score1\": 'test1',\n    \"Score2\": 'test2',\n    \"Score3\": 'test3',\n    \"Score4\": 'test4',\n    \"Score5\": 'test5',\n    \"Status\": 'Pending',\n    \"Comment\": ''\n  }, {\n    \"id\": 2,\n    \"Perspective\": 'Profitability',\n    \"Individual KPI\": 'own KPI ',\n    \"Target\": '50%',\n    \"Measurements\": 'measurement1',\n    \"Weight\": '30%',\n    \"Score1\": 'test1',\n    \"Score2\": 'test2',\n    \"Score3\": 'test3',\n    \"Score4\": 'test4',\n    \"Score5\": 'test5',\n    \"Status\": 'Pending',\n    \"Comment\": ''\n  }, {\n    \"id\": 3,\n    \"Perspective\": '  Resource Performance',\n    \"Individual KPI\": 'Department KPI1 ',\n    \"Target\": '10%',\n    \"Measurements\": 'measurement1',\n    \"Weight\": '30%',\n    \"Score1\": 'test1',\n    \"Score2\": 'test2',\n    \"Score3\": 'test3',\n    \"Score4\": 'test4',\n    \"Score5\": 'test5',\n    \"Status\": 'Pending',\n    \"Comment\": ''\n  }, {\n    \"id\": 4,\n    \"Perspective\": ' Strategic conformance rating',\n    \"Individual KPI\": 'Department KPI2',\n    \"Target\": '20%',\n    \"Measurements\": 'measurement1',\n    \"Weight\": '30%',\n    \"Score1\": 'test1',\n    \"Score2\": 'test2',\n    \"Score3\": 'test3',\n    \"Score4\": 'test4',\n    \"Score5\": 'test5',\n    \"Status\": 'Pending',\n    \"Comment\": ''\n  }]\n}"
+      }
+    ],
+    "userPermissions": []
+  },
+  "id": "SupervisorApprovalKPI_data",
+  "deleted": false,
+  "gitSyncId": "649125b34a35112df4b37a8a_649125b64a35112df4b37d2b"
+}

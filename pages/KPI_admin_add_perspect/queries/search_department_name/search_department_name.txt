@@ -1,0 +1,3 @@
+SELECT * 
+FROM public."office_master" 
+where LOWER(office_name) like '%{{this.params.department_name.trim().toLowerCase()}}%';

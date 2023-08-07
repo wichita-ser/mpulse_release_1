@@ -1,0 +1,5 @@
+SELECT cvd.core_value_id, cvd.choice, sd.no as score
+FROM public."core_value_detail" cvd
+JOIN public."score_detail" sd on cvd.score = sd.score AND evaluate_type_id=2
+WHERE cvd.core_value_id = {{get_core_value.data[0].core_value_id}} AND cvd.evalutor_id = '{{this.params.employee_id}}'
+order by cvd.choice ASC;

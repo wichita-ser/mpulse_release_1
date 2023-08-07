@@ -1,0 +1,66 @@
+{
+    "boxShadow": "none",
+    "widgetName": "select_edit_emp_group_mem",
+    "isFilterable": true,
+    "displayName": "MultiSelect",
+    "iconSVG": "/static/media/icon.a3495809ae48291a64404f3bb04b0e69.svg",
+    "labelText": "Member",
+    "searchTags": [
+        "dropdown",
+        "tags"
+    ],
+    "topRow": 11,
+    "bottomRow": 19,
+    "parentRowSpace": 10,
+    "labelWidth": 5,
+    "type": "MULTI_SELECT_WIDGET_V2",
+    "serverSideFiltering": false,
+    "hideCard": false,
+    "defaultOptionValue": [
+        "GREEN",
+        "RED"
+    ],
+    "animateLoading": true,
+    "parentColumnSpace": 7.3125,
+    "dynamicTriggerPathList": [],
+    "leftColumn": 2,
+    "dynamicBindingPathList": [
+        {"key": "accentColor"},
+        {"key": "borderRadius"}
+    ],
+    "labelPosition": "Top",
+    "options": [
+        {
+            "label": "Blue",
+            "value": "BLUE"
+        },
+        {
+            "label": "Green",
+            "value": "GREEN"
+        },
+        {
+            "label": "Red",
+            "value": "RED"
+        }
+    ],
+    "labelStyle": "BOLD",
+    "placeholderText": "Select Member",
+    "isDisabled": false,
+    "key": "3j3onsm5y6",
+    "labelTextSize": "0.875rem",
+    "isRequired": false,
+    "isDeprecated": false,
+    "rightColumn": 62,
+    "dynamicHeight": "FIXED",
+    "widgetId": "twbkv24qwi",
+    "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+    "isVisible": true,
+    "version": 1,
+    "parentId": "myu85qsl3u",
+    "labelAlignment": "left",
+    "renderMode": "CANVAS",
+    "isLoading": false,
+    "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+    "maxDynamicHeight": 9000,
+    "minDynamicHeight": 4
+}

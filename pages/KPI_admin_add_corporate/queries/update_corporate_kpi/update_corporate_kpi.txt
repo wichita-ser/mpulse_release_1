@@ -1,0 +1,6 @@
+UPDATE public."corporate_kpi" SET
+    "kpi_name" = '{{this.params.KPI.trim()}}',
+    "perspective_id" = {{this.params.perspective_id}},
+    "updated_date" = Now(),
+    "updated_by" = '{{appsmith.store.jwt.email}}'
+  WHERE "corporate_kpi_id" = {{this.params.corporate_kpi_id}};

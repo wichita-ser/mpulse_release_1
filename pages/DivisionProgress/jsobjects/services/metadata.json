@@ -1,0 +1,20 @@
+{
+  "unpublishedCollection": {
+    "name": "services",
+    "pageId": "DivisionProgress",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [
+      {
+        "name": "employee",
+        "value": "[{\n  \"id\": 20201152,\n  \"name\": \"Warakorn Lertwattanapong\",\n  \"email\": \"warakorn@gmail.com\",\n  \"Tel\": \"0877945612\"\n}, {\n  \"id\": 20201153,\n  \"name\": \"Sainamphung Phanphet\",\n  \"email\": \"sainamphung@gmail.com\",\n  \"Tel\": \"0877945612\"\n}, {\n  \"id\": 20201154,\n  \"name\": \"Nawaporn Manyanon\",\n  \"email\": \"nawaporn@gmail.com\",\n  \"Tel\": \"0877945612\"\n}, {\n  \"id\": 20201155,\n  \"name\": \"Prangprai Rattanachetchutha\",\n  \"email\": \"prangrai@gmail.com\",\n  \"Tel\": \"0877945612\"\n}, {\n  \"id\": 20201156,\n  \"name\": \"Phumchanok Sakdakampanar\",\n  \"email\": \"phumchanok@gmail.com\",\n  \"Tel\": \"0877945612\"\n}, {\n  \"id\": 20201157,\n  \"name\": \"Tanawat Limsakul\",\n  \"email\": \"tanawat@gmail.com\",\n  \"Tel\": \"0877945612\"\n}]"
+      }
+    ],
+    "userPermissions": []
+  },
+  "id": "DivisionProgress_services",
+  "deleted": false,
+  "gitSyncId": "649125b34a35112df4b37a8a_649125b94a35112df4b37fee"
+}

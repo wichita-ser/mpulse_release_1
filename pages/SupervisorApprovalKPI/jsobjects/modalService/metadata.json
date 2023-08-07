@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "modalService",
+    "pageId": "SupervisorApprovalKPI",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "SupervisorApprovalKPI_modalService",
+  "deleted": false,
+  "gitSyncId": "649125b34a35112df4b37a8a_649125b64a35112df4b37d76"
+}

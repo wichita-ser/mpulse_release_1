@@ -1,0 +1,9 @@
+SELECT dk.department_kpi_id AS "id", p.name as "Perspective", dk.department_kpi_name as "Department KPI", ck.kpi_name as "Corporate KPI", y2d.measurements AS "Measurement", y2d.target AS "Target", y2d.weight AS "Weight", y2d.score_1 AS "Score1", y2d.score_2 AS "Score2", y2d.score_3 AS "Score3", y2d.score_4 AS "Score4", y2d.score_5 AS "Score5", dep1.office_name AS "Department" , dep2.office_name AS "Division", y2d.auto_eva_from AS "Auto Evaluate" 
+
+FROM public."department_kpi" AS dk
+left join public."year_to_department_kpi" AS y2d ON dk.department_kpi_id=y2d.department_kpi_id
+join public."perspective" AS p ON dk.perspective_id=p.perspective_id
+left join public."office_master" AS dep1 ON y2d.department_id=dep1.office_code
+left join public."office_master" AS dep2 ON y2d.division_id=dep2.office_code
+LEFT JOIN public."corporate_kpi" AS ck ON dk.corporate_kpi_id=ck.corporate_kpi_id
+order by p.name ASC, dk.department_kpi_name asc;

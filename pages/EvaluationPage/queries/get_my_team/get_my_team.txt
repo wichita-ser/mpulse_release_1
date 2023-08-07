@@ -1,0 +1,6 @@
+SELECT em.employee_id, CONCAT(em.firstname_en,' ',em.lastname_en) as employee_name, en.status as engagement_status, s.status as self_evaluate_status, cv.status as core_value_status
+FROM public."employee" em
+left join public.engagement en on em.employee_id=en.employee_id
+left join public.kpi_evaluate s on em.employee_id=s.employee_id
+left join public.core_value cv on em.employee_id=cv.employee_id
+where em.division_name = '{{appsmith.store.jwt.division_name}}';

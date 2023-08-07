@@ -1,0 +1,57 @@
+{
+  "unpublishedPage": {
+    "name": "360_select_employee",
+    "slug": "360-select-employee",
+    "layouts": [
+      {
+        "viewMode": false,
+        "dsl": {
+          "widgetName": "MainContainer",
+          "backgroundColor": "none",
+          "rightColumn": 1224,
+          "snapColumns": 64,
+          "detachFromLayout": true,
+          "widgetId": "0",
+          "topRow": 0,
+          "bottomRow": 820,
+          "containerStyle": "none",
+          "snapRows": 81,
+          "parentRowSpace": 1,
+          "type": "CANVAS_WIDGET",
+          "canExtend": true,
+          "version": 79,
+          "minHeight": 820,
+          "parentColumnSpace": 1,
+          "dynamicBindingPathList": [],
+          "leftColumn": 0
+        },
+        "layoutOnLoadActions": [
+          [
+            {
+              "id": "360_select_employee_initObj.init",
+              "name": "initObj.init",
+              "collectionId": "360_select_employee_initObj",
+              "confirmBeforeExecute": false,
+              "pluginType": "JS",
+              "jsonPathKeys": [
+                "async () => {\n  let newSelectOptions = [];\n  const selectedEmployee = appsmith.store.submitSelectedEmployee ? appsmith.store.submitSelectedEmployee : [];\n  if (selectedEmployee && selectedEmployee.length !== 0) {\n    await data.employee.forEach(item => {\n      const isAlreadyPresent = selectedEmployee.some(existingEmployee => existingEmployee.id === item.id);\n      if (!isAlreadyPresent) {\n        newSelectOptions.push(item);\n      }\n    });\n  } else {\n    newSelectOptions = data.employee;\n  }\n  storeValue('selectOptions', newSelectOptions);\n  storeValue('selectedEmployee', selectedEmployee);\n}"
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ]
+        ],
+        "layoutOnLoadActionErrors": [],
+        "validOnPageLoadActions": true,
+        "id": "360_select_employee",
+        "deleted": false,
+        "policies": [],
+        "userPermissions": []
+      }
+    ],
+    "userPermissions": [],
+    "policies": [],
+    "isHidden": false
+  },
+  "deleted": false,
+  "gitSyncId": "64a41ea1c5ad8c54598cf856_64a41ea1c5ad8c54598cf863"
+}

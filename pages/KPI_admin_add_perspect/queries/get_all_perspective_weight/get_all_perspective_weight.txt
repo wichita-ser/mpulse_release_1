@@ -1,0 +1,9 @@
+SELECT ksw.kpi_setting_weight_id AS id, ksw.division_id as DivisionID,
+(SELECT CONCAT(dep.company, '-', dep.office_code) FROM public.office_master dep WHERE dep.office_code=ksw.department_id limit 1) AS DepartmentID,
+(SELECT dep.office_name FROM public.office_master dep WHERE dep.office_code=ksw.department_id limit 1) AS Department,
+(SELECT dep.office_name FROM public.office_master dep WHERE dep.office_code=ksw.division_id limit 1) AS Division,
+(SELECT w2s.weight FROM public.weight_to_perspective_setting w2s WHERE w2s.kpi_setting_weight_id=ksw.kpi_setting_weight_id AND w2s.perspective_id=1) AS Strategic_conformance_rating,
+(SELECT w2s.weight FROM public.weight_to_perspective_setting w2s WHERE w2s.kpi_setting_weight_id=ksw.kpi_setting_weight_id AND w2s.perspective_id=2) AS Resource_Performance,
+(SELECT w2s.weight FROM public.weight_to_perspective_setting w2s WHERE w2s.kpi_setting_weight_id=ksw.kpi_setting_weight_id AND w2s.perspective_id=3) AS Profitability
+FROM public.kpi_setting_weight ksw 
+ORDER BY Department ASC, Division ASC

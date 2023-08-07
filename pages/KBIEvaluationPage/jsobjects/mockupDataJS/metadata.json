@@ -1,0 +1,24 @@
+{
+  "unpublishedCollection": {
+    "name": "mockupDataJS",
+    "pageId": "KBIEvaluationPage",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [
+      {
+        "name": "professionalKBI",
+        "value": "[{\n  \"kbi\": \"Save cost 3%\",\n  \"score\": \"\",\n  \"self\": \"3\",\n  \"eva_360_1\": \"โครงการเสร็จล่าช้ากว่ากำหนดและไม่สามารถ utilize resource ได้\",\n  \"eva_360_2\": \"โครงการเสร็จล่าช้ากว่ากำหนด แต่สามารถ utilize resource ได้\",\n  \"eva_360_3\": \"โครงการเสร็จตามกำหนด และ utilize resource ได้ตามที่วางแผนไว้\",\n  \"eva_360_4\": \"โครงการเสร็จเร็วกว่ากำหนด แต่อาจจะต้องใช้ resource มากกว่าที่วางแผนไว้\",\n  \"eva_360_5\": \"โครงการเสร็จเร็วกว่ากำหนด และ utilize resource ได้เต็มตามที่วางแผนไว้\"\n}, {\n  \"kbi\": \"Contribute with PMO to perform the standard process are consistent with the Consultant's objectives\",\n  \"score\": \"\",\n  \"self\": \"5\",\n  \"eva_360_1\": \"ไม่ยอมรับและไม่เข้าใจ standard process รวมถึงไม่นำ Standard template จาก PMO ไปใช้ในการทำงาน\",\n  \"eva_360_2\": \"มีการใช้ Standard template จาก PMO บ้างบางครั้ง แต่ยังไม่เข้าใจใน  standard process\",\n  \"eva_360_3\": \"ตอบรับ standard process และใช้ Standard template จาก PMO อย่างสม่ำเสมอ\",\n  \"eva_360_4\": \"ตอบรับ standard process และแนะนำเพื่อนร่วมงานให้เข้าใจในกระบวนการ  และยังช่วยสนับสนุนงานของทาง PMO \",\n  \"eva_360_5\": \"\"\n}]"
+      },
+      {
+        "name": "evaluators",
+        "value": "[{\n  \"id\": 20201153,\n  \"name\": \"Nawaporn Manyanon\",\n  \"email\": \"nawaporn_m@mfec.co.th\",\n  \"addBy\": \"Natnaka\"\n}, {\n  \"id\": 20201151,\n  \"name\": \"Sainamphung Phanphet\",\n  \"email\": \"sainamphung@mfec.co.th\",\n  \"addBy\": \"Natnaka\"\n}, {\n  \"id\": 20201151,\n  \"name\": \"Tanawat Limsakul\",\n  \"email\": \"tanawat_l@mfec.co.th\",\n  \"addBy\": \"Pongsatorn\"\n}]"
+      }
+    ],
+    "userPermissions": []
+  },
+  "id": "KBIEvaluationPage_mockupDataJS",
+  "deleted": false,
+  "gitSyncId": "649125b34a35112df4b37a8a_649125b74a35112df4b37ecb"
+}

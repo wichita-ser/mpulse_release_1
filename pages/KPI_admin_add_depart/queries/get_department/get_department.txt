@@ -1,0 +1,4 @@
+SELECT office_code, company, office_name
+FROM public."office_master"
+where office_level = 'Department' 
+order by office_name ASC;

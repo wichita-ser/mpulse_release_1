@@ -1,0 +1,3 @@
+SELECT * 
+FROM public."kpi_evaluate" 
+WHERE employee_id = '{{appsmith.URL.queryParams.employeeId}}' and duration_setting_id = {{appsmith.store.jwt.duration_setting_id}};

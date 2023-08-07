@@ -1,0 +1,5 @@
+SELECT y2c.corporate_kpi_id as "id",p.name as perspective, ck.kpi_name as "KPI", y2c.target, y2c.measurements
+FROM public."corporate_kpi" AS ck
+join public."year_to_corporate_kpi" AS y2c ON ck.corporate_kpi_id=y2c.corporate_kpi_id
+join public."perspective" AS p ON ck.perspective_id=p.perspective_id
+order by p.name ASC, ck.kpi_name asc;

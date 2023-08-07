@@ -1,0 +1,32 @@
+{
+  "unpublishedCollection": {
+    "name": "mockupDataJS",
+    "pageId": "PM setting",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [
+      {
+        "name": "evaluation360",
+        "value": "[{\n  \"id\": 20201152,\n  \"name\": \"Tammanoon\",\n  \"team\": \"M-LAB\",\n  \"status\": \"Todo\"\n}, {\n  \"id\": 20201153,\n  \"name\": \"Nawaporn\",\n  \"team\": \"M-LAB\",\n  \"status\": \"Done\"\n}, {\n  \"id\": 20201150,\n  \"name\": \"Phennapa\",\n  \"team\": \"M-LAB\",\n  \"status\": \"Rejected\"\n}]"
+      },
+      {
+        "name": "evaluationMe",
+        "value": "[{\n  \"id\": 20201151,\n  \"name\": \"Sainamphung\",\n  \"email\": \"sainamphung@mfec.co.th\",\n  \"status\": \"Pending\"\n}, {\n  \"id\": 20201153,\n  \"name\": \"Nawaporn\",\n  \"email\": \"nawaporn@mfec.co.th\",\n  \"status\": \"Submited\"\n}, {\n  \"id\": 20201154,\n  \"name\": \"Tanawat\",\n  \"email\": \"tanawat@mfec.co.th\",\n  \"status\": \"Rejected\"\n}]"
+      },
+      {
+        "name": "subOrdinate",
+        "value": "[{\n  \"id\": \"01154\",\n  \"name\": \"Sainamphung Phanphet\",\n  \"kpi_status\": \"Pending\",\n  \"core_status\": \"Submitted\"\n}, {\n  \"id\": \"01155\",\n  \"name\": \"Tanawat Limsakul\",\n  \"kpi_status\": \"Submitted\",\n  \"core_status\": \"Pending\"\n}, {\n  \"id\": \"01156\",\n  \"name\": \"Phumchanok Sakdakampanar\",\n  \"kpi_status\": \"Submitted\",\n  \"core_status\": \"Submitted\"\n}, {\n  \"id\": \"01157\",\n  \"name\": \"Prangprai Rattanachetchutha\",\n  \"kpi_status\": \"Submitted\",\n  \"core_status\": \"Submitted\"\n}, {\n  \"id\": \"01158\",\n  \"name\": \"Warakorn Lertwattanapong\",\n  \"kpi_status\": \"Submitted\",\n  \"core_status\": \"Submitted\"\n}]"
+      },
+      {
+        "name": "date",
+        "value": "{\n  \"dateuntil\": \"30 September 2023\",\n  \"remark\": \"Assign Departments KPI to staff , Assign Departments KPI to staff , Assign Departments KPI to staff , Assign Departments KPI to staff , WWWWWWWWWW WWWWWWWWWWWW\",\n  \"remark_1\": \"Assign Departments KPI to staff\"\n}"
+      }
+    ],
+    "userPermissions": []
+  },
+  "id": "PM setting_mockupDataJS",
+  "deleted": false,
+  "gitSyncId": "649125b34a35112df4b37a8a_649125b84a35112df4b37f55"
+}

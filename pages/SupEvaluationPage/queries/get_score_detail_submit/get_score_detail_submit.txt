@@ -1,0 +1,4 @@
+SELECT sd.* 
+FROM public."score_detail" sd
+where sd.evaluate_type_id = {{this.params.evaluate_type_id}} and sd.no = {{this.params.score}}
+limit 1;

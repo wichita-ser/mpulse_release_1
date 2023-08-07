@@ -1,0 +1,7 @@
+{{
+  {
+    "employee_ids": this.params.employee_ids,
+    "kpi_list": this.params.kpi_list,
+    "kpi_type": this.params.kpi_type
+  }
+}}

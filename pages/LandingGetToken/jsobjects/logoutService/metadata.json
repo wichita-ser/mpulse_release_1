@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "logoutService",
+    "pageId": "LandingGetToken",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "LandingGetToken_logoutService",
+  "deleted": false,
+  "gitSyncId": "649125b34a35112df4b37a8a_6492b8d42b16444427a0c85d"
+}

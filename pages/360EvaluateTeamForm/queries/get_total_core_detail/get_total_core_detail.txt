@@ -1,0 +1,4 @@
+SELECT Sum(score) as total 
+FROM public."core_value_detail" 
+where core_value_id = '{{get_core_value.data[0].core_value_id}}' AND evalutor_id = '{{this.params.employee_id}}'
+LIMIT 1;

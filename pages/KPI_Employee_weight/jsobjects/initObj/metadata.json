@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "initObj",
+    "pageId": "KPI_Employee_weight",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "KPI_Employee_weight_initObj",
+  "deleted": false,
+  "gitSyncId": "649125b34a35112df4b37a8a_649125bb4a35112df4b381ac"
+}

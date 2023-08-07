@@ -1,0 +1,1 @@
+SELECT DISTINCT kpi_name FROM public."corporate_kpi" order by kpi_name ASC;

@@ -1,0 +1,5 @@
+SELECT cvd.*,
+(SELECT score FROM public."core_value_detail" cvd2 where cvd2.core_value_id=cvd.core_value_id and cvd2.choice=cvd.choice and cvd2.evalutor_id='{{this.params.employee_id}}' ) AS my_score
+FROM public."core_value_detail"  cvd
+WHERE cvd.core_value_id = {{get_core_value.data[0].core_value_id}} and cvd.evalutor_id = '{{appsmith.URL.queryParams.employeeId}}'
+order by cvd.choice ASC;

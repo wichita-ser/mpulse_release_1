@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "transformService",
+    "pageId": "KPIEmployeeEditIndividual",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "KPIEmployeeEditIndividual_transformService",
+  "deleted": false,
+  "gitSyncId": "649125b34a35112df4b37a8a_649e7f7b2b16444427a1d68c"
+}

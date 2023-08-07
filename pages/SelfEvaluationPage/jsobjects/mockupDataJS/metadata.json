@@ -1,0 +1,28 @@
+{
+  "unpublishedCollection": {
+    "name": "mockupDataJS",
+    "pageId": "SelfEvaluationPage",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [
+      {
+        "name": "departmentKPI",
+        "value": "[{\n  \"id\": 1,\n  \"perspective\": \"Operational Excellence\",\n  \"kpi\": \"Improving the project effectiveness to deliver the good quality of work products by validity, consistency, timeliness and ensure that leads to client's satisfaction\",\n  \"Definition\": \"ส่งมอบ work product ล่าช้ากว่าแผนที่กำหนด และต้องมีการกลับมาแก้ไข้มากกว่า 5 (S), 7 (M), 12 (L & MT)\",\n  \"weight\": \"1\",\n  \"rating\": \"\"\n}, {\n  \"id\": 2,\n  \"perspective\": \"Financial\",\n  \"kpi\": \"Save cost 3%\",\n  \"Definition\": \"โครงการเสร็จล่าช้ากว่ากำหนดและไม่สามารถ utilize resource ได้\",\n  \"weight\": \"2\",\n  \"rating\": \"\"\n}, {\n  \"id\": 3,\n  \"perspective\": \"Operational Excellence\",\n  \"kpi\": \"Focus on the objective of projects and project milestone to finished on time plan\",\n  \"Definition\": \"ส่งมอบ work product ล่าช้ากว่าแผนที่กำหนดไว้มากกว่า 20% จากกำหนดเวลาที่ต้องส่งมอบ\",\n  \"weight\": \"3\",\n  \"rating\": \"\"\n}, {\n  \"id\": 4,\n  \"perspective\": \"People Engagement & Development\",\n  \"kpi\": \"Project Management 1D Training\",\n  \"Definition\": \"ไม่ได้เข้าเรียน\",\n  \"weight\": \"5\",\n  \"rating\": \"\"\n}]"
+      },
+      {
+        "name": "individualKPI",
+        "value": "[{\n  \"id\": 1,\n  \"perspective\": \"Financial\",\n  \"kpi\": \"Save cost 3%\",\n  \"Definition\": \"โครงการเสร็จล่าช้ากว่ากำหนดและไม่สามารถ utilize resource ได้\",\n  \"weight\": \"1\",\n  \"rating\": \"\"\n}, {\n  \"id\": 2,\n  \"perspective\": \"Financial\",\n  \"kpi\": \"Save cost 3%\",\n  \"Definition\": \"โครงการเสร็จล่าช้ากว่ากำหนด แต่สามารถ utilize resource ได้\",\n  \"weight\": \"1\",\n  \"rating\": \"\"\n}, {\n  \"id\": 3,\n  \"perspective\": \"Financial\",\n  \"kpi\": \"Save cost 3%\",\n  \"Definition\": \"โครงการเสร็จตามกำหนด และ utilize resource ได้ตามที่วางแผนไว้\",\n  \"weight\": \"1\",\n  \"rating\": \"\"\n}, {\n  \"id\": 4,\n  \"perspective\": \"People\",\n  \"kpi\": \"Improve Soft skill of Ownership to align with the business objective\",\n  \"Definition\": \"ไม่ได้ Attend interested class  \",\n  \"weight\": \"2\",\n  \"rating\": \"\"\n}, {\n  \"id\": 5,\n  \"perspective\": \"People\",\n  \"kpi\": \"Improve Soft skill of Ownership to align with the business objective\",\n  \"Definition\": \"Attend Ownership class แต่ไม่สามาสามารถนำมาใช้ในงานได้ \",\n  \"weight\": \"2\",\n  \"rating\": \"\"\n}]"
+      },
+      {
+        "name": "subordinateKPI",
+        "value": "[{\n  \"id\": 20201152,\n  \"name\": \"Tammanoon\",\n  \"score\": \"80\",\n  \"status\": \"Pending\"\n}, {\n  \"id\": 20201153,\n  \"name\": \"Nawaporn\",\n  \"score\": \"70\",\n  \"status\": \"Pending\"\n}, {\n  \"id\": 20201150,\n  \"name\": \"Phennapa\",\n  \"score\": \"95\",\n  \"status\": \"Submited\"\n}, {\n  \"id\": 20201157,\n  \"name\": \"Warakorn\",\n  \"score\": \"60\",\n  \"status\": \"Submited\"\n}]"
+      }
+    ],
+    "userPermissions": []
+  },
+  "id": "SelfEvaluationPage_mockupDataJS",
+  "deleted": false,
+  "gitSyncId": "649125b34a35112df4b37a8a_649125ba4a35112df4b380f6"
+}

@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "dataServices",
+    "pageId": "KPI_admin_add_depart",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "KPI_admin_add_depart_dataServices",
+  "deleted": false,
+  "gitSyncId": "649125b34a35112df4b37a8a_649125bc4a35112df4b38255"
+}

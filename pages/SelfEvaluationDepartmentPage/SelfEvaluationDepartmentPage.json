@@ -1,0 +1,57 @@
+{
+  "unpublishedPage": {
+    "name": "SelfEvaluationDepartmentPage",
+    "slug": "selfevaluationdepartmentpage",
+    "layouts": [
+      {
+        "viewMode": false,
+        "dsl": {
+          "widgetName": "MainContainer",
+          "backgroundColor": "none",
+          "rightColumn": 1224,
+          "snapColumns": 64,
+          "detachFromLayout": true,
+          "widgetId": "0",
+          "topRow": 0,
+          "bottomRow": 1510,
+          "containerStyle": "none",
+          "snapRows": 81,
+          "parentRowSpace": 1,
+          "type": "CANVAS_WIDGET",
+          "canExtend": true,
+          "version": 79,
+          "minHeight": 820,
+          "parentColumnSpace": 1,
+          "dynamicBindingPathList": [],
+          "leftColumn": 0
+        },
+        "layoutOnLoadActions": [
+          [
+            {
+              "id": "SelfEvaluationDepartmentPage_initObj.onPageLoad",
+              "name": "initObj.onPageLoad",
+              "collectionId": "SelfEvaluationDepartmentPage_initObj",
+              "confirmBeforeExecute": false,
+              "pluginType": "JS",
+              "jsonPathKeys": [
+                "async function () {\n  storeValue('page', \"SelfEvaluationDepartmentPage\");\n  const isLogin = await validateToken.runValidateToken();\n  if (!isLogin) {\n    return;\n  }\n  storeValue('selfEvaluateDepartment', null);\n  await get_self_evaluate.run({\n    'employee_id': appsmith.store.monitorEmp ? appsmith.store.monitorEmp.subordinate.employee_id : appsmith.store.jwt.employee_id\n  });\n  await get_department_evaluate_detail.run({\n    'kpi_evaluate_id': get_self_evaluate.data[0].kpi_evaluate_id,\n    'employee_id': appsmith.store.monitorEmp ? appsmith.store.monitorEmp.subordinate.employee_id : appsmith.store.jwt.employee_id\n  });\n  const dataEvaluateDetailKPI = [];\n  for (let i = 0; i < get_department_evaluate_detail.data.length; i++) {\n    try {\n      const {payload} = await get_auto_evaluate.run({\n        'employee_id': appsmith.store.monitorEmp ? appsmith.store.monitorEmp.subordinate.employee_id : appsmith.store.jwt.employee_id,\n        'kpi_evaluate_detail_id': get_department_evaluate_detail.data[i].detail_id\n      });\n      if (payload.performance_type != '') {\n        dataEvaluateDetailKPI.push({\n          'no': i + 1,\n          'kpi_evaluate_detail_id': get_department_evaluate_detail.data[i].detail_id,\n          'perspective': get_department_evaluate_detail.data[i].perspective,\n          'kpi_name': get_department_evaluate_detail.data[i].department_kpi_name ? get_department_evaluate_detail.data[i].department_kpi_name : get_department_evaluate_detail.data[i].individual_kpi_name,\n          'target': get_department_evaluate_detail.data[i].target,\n          'measurement': get_department_evaluate_detail.data[i].measurement,\n          'weight': get_department_evaluate_detail.data[i].weight,\n          'score_1': get_department_evaluate_detail.data[i].score_1,\n          'score_2': get_department_evaluate_detail.data[i].score_2,\n          'score_3': get_department_evaluate_detail.data[i].score_3,\n          'score_4': get_department_evaluate_detail.data[i].score_4,\n          'score_5': get_department_evaluate_detail.data[i].score_5,\n          'auto_eva_from': payload.performance_type,\n          'weight_department_kpi': get_department_evaluate_detail.data[i].weight_department_kpi,\n          'score': payload.score_no ? payload.score_no : get_department_evaluate_detail.data[i].score ? get_department_evaluate_detail.data[i].score : 0,\n          'result': get_department_evaluate_detail.data[i].result ? get_department_evaluate_detail.data[i].result : ''\n        });\n      } else {\n        dataEvaluateDetailKPI.push({\n          'no': i + 1,\n          'kpi_evaluate_detail_id': get_department_evaluate_detail.data[i].detail_id,\n          'perspective': get_department_evaluate_detail.data[i].perspective,\n          'kpi_name': get_department_evaluate_detail.data[i].department_kpi_name ? get_department_evaluate_detail.data[i].department_kpi_name : get_department_evaluate_detail.data[i].individual_kpi_name,\n          'target': get_department_evaluate_detail.data[i].target,\n          'measurement': get_department_evaluate_detail.data[i].measurement,\n          'weight': get_department_evaluate_detail.data[i].weight,\n          'score_1': get_department_evaluate_detail.data[i].score_1,\n          'score_2': get_department_evaluate_detail.data[i].score_2,\n          'score_3': get_department_evaluate_detail.data[i].score_3,\n          'score_4': get_department_evaluate_detail.data[i].score_4,\n          'score_5': get_department_evaluate_detail.data[i].score_5,\n          'auto_eva_from': '',\n          'weight_department_kpi': get_department_evaluate_detail.data[i].weight_department_kpi,\n          'score': get_department_evaluate_detail.data[i].score ? get_department_evaluate_detail.data[i].score : 0,\n          'result': get_department_evaluate_detail.data[i].result\n        });\n      }\n    } catch (error) {\n      dataEvaluateDetailKPI.push({\n        'no': i + 1,\n        'kpi_evaluate_detail_id': get_department_evaluate_detail.data[i].detail_id,\n        'perspective': get_department_evaluate_detail.data[i].perspective,\n        'kpi_name': get_department_evaluate_detail.data[i].department_kpi_name ? get_department_evaluate_detail.data[i].department_kpi_name : get_department_evaluate_detail.data[i].individual_kpi_name,\n        'target': get_department_evaluate_detail.data[i].target,\n        'measurement': get_department_evaluate_detail.data[i].measurement,\n        'weight': get_department_evaluate_detail.data[i].weight,\n        'score_1': get_department_evaluate_detail.data[i].score_1,\n        'score_2': get_department_evaluate_detail.data[i].score_2,\n        'score_3': get_department_evaluate_detail.data[i].score_3,\n        'score_4': get_department_evaluate_detail.data[i].score_4,\n        'score_5': get_department_evaluate_detail.data[i].score_5,\n        'auto_eva_from': '',\n        'weight_department_kpi': get_department_evaluate_detail.data[i].weight_department_kpi,\n        'score': get_department_evaluate_detail.data[i].score ? get_department_evaluate_detail.data[i].score : 0,\n        'result': get_department_evaluate_detail.data[i].result\n      });\n    }\n  }\n  storeValue('selfEvaluateDepartment', {\n    'kpi_evaluate_id': get_self_evaluate.data[0].kpi_evaluate_id,\n    'current_choice': 0,\n    'dataEvaluateDetailKPI': dataEvaluateDetailKPI,\n    'status': get_self_evaluate.data[0].status\n  });\n}"
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ]
+        ],
+        "layoutOnLoadActionErrors": [],
+        "validOnPageLoadActions": true,
+        "id": "SelfEvaluationDepartmentPage",
+        "deleted": false,
+        "policies": [],
+        "userPermissions": []
+      }
+    ],
+    "userPermissions": [],
+    "policies": [],
+    "isHidden": false
+  },
+  "deleted": false,
+  "gitSyncId": "64a41ea1c5ad8c54598cf856_64a41ea3c5ad8c54598cf9a2"
+}

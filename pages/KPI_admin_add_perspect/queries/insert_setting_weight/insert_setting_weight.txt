@@ -1,0 +1,2 @@
+INSERT INTO public."kpi_setting_weight" ("department_id", "division_id", "created_date", "updated_date", "created_by", "updated_by")
+  VALUES ('{{this.params.department_id}}', '{{this.params.division_id}}', Now(), Now(), '{{appsmith.store.jwt.email}}', '{{appsmith.store.jwt.email}}');

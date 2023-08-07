@@ -1,0 +1,2 @@
+INSERT INTO public."engagement_detail" ("engagement_id", "question", "created_date", "created_by", "updated_date", "updated_by")
+  VALUES ({{get_my_engagement.data[0].engagement_id}}, {{this.params.question}}, Now(), '{{appsmith.store.jwt.email}}', Now(), '{{appsmith.store.jwt.email}}');

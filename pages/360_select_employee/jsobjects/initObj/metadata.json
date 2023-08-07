@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "initObj",
+    "pageId": "360_select_employee",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "360_select_employee_initObj",
+  "deleted": false,
+  "gitSyncId": "649125b34a35112df4b37a8a_649125b84a35112df4b37eee"
+}

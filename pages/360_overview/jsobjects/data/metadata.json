@@ -1,0 +1,28 @@
+{
+  "unpublishedCollection": {
+    "name": "data",
+    "pageId": "360_overview",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [
+      {
+        "name": "employee",
+        "value": "[{\n  \"id\": 20201152,\n  \"name\": \"Warakorn Lertwattanapong\",\n  \"email\": \"warakorn@gmail.com\",\n  \"team\": \"M-Lab\"\n}, {\n  \"id\": 20201153,\n  \"name\": \"Sainamphung Phanphet\",\n  \"email\": \"sainamphung@gmail.com\",\n  \"team\": \"M-Lab\"\n}, {\n  \"id\": 20201154,\n  \"name\": \"Nawaporn Manyanon\",\n  \"email\": \"nawaporn@gmail.com\",\n  \"team\": \"M-Lab\"\n}, {\n  \"id\": 20201155,\n  \"name\": \"Prangprai Rattanachetchutha\",\n  \"email\": \"prangrai@gmail.com\",\n  \"team\": \"M-Lab\"\n}, {\n  \"id\": 20201156,\n  \"name\": \"Phumchanok Sakdakampanar\",\n  \"email\": \"phumchanok@gmail.com\",\n  \"team\": \"M-Lab\"\n}, {\n  \"id\": 20201157,\n  \"name\": \"Tanawat Limsakul\",\n  \"email\": \"tanawat@gmail.com\",\n  \"team\": \"M-Lab\"\n}]"
+      },
+      {
+        "name": "myEmployee",
+        "value": "[{\n  \"id\": 20201152,\n  \"name\": \"Warakorn Lertwattanapong\",\n  \"email\": \"warakorn@gmail.com\",\n  \"evaluator\": [{\n    \"id\": 20201156,\n    \"name\": \"Phumchanok Sakdakampanar\",\n    \"email\": \"phumchanok@gmail.com\",\n    \"team\": \"M-Lab\"\n  }, {\n    \"id\": 20201155,\n    \"name\": \"Prangprai Rattanachetchutha\",\n    \"email\": \"prangrai@gmail.com\",\n    \"team\": \"M-Lab\"\n  }],\n  \"team\": \"M-Lab\",\n  \"status\": \"Doing\"\n}, {\n  \"id\": 20201153,\n  \"name\": \"Sainamphung Phanphet\",\n  \"email\": \"sainamphung@gmail.com\",\n  \"evaluator\": [{\n    \"id\": 20201157,\n    \"name\": \"Tanawat Limsakul\",\n    \"email\": \"tanawat@gmail.com\",\n    \"team\": \"M-Lab\"\n  }],\n  \"team\": \"M-Lab\",\n  \"status\": \"Approved\"\n}, {\n  \"id\": 20201155,\n  \"name\": \"Prangprai Rattanachetchutha\",\n  \"email\": \"prangrai@gmail.com\",\n  \"evaluator\": [{\n    \"id\": 20201157,\n    \"name\": \"Tanawat Limsakul\",\n    \"email\": \"tanawat@gmail.com\",\n    \"team\": \"M-Lab\"\n  }],\n  \"team\": \"M-Lab\",\n  \"status\": \"Pending\"\n}]"
+      },
+      {
+        "name": "comment",
+        "value": "[{\n  \"comment\": \"เพิ่มรายชื่อ คนประเมินอีก 2 คน เช่น คนที่เคยทำ Project กันหรือ คนนอกทีมที่เคยทำงานด้วยกัน\"\n}]"
+      }
+    ],
+    "userPermissions": []
+  },
+  "id": "360_overview_data",
+  "deleted": false,
+  "gitSyncId": "649125b34a35112df4b37a8a_649125b94a35112df4b37fb3"
+}

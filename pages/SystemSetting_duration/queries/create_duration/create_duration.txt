@@ -1,0 +1,18 @@
+INSERT INTO public."duration_setting" ("year", "start_date", "end_date", "supervisor_goal_setting_start_date", "supervisor_goal_setting_end_date", "employee_goal_setting_start_date", "employee_goal_setting_end_date", "supervisor_core_setting_start_date", "supervisor_core_setting_end_date", "employee_core_setting_start_date", "employee_core_setting_end_date", "supervisor_evaluate_setting_start_date", "supervisor_evaluate_setting_end_date", "employee_evaluate_setting_start_date", "employee_evaluate_setting_end_date", "status", "created_date", "evaluate_round", "created_by", "updated_date", "updated_by")
+  VALUES (
+		'{{SelectYear.selectedOptionValue}}'
+		, '{{moment(SelectStart.selectedDate).format('YYYY-MM-DD')}}'
+		, '{{moment(SelectEnd.selectedDate).format('YYYY-MM-DD')}}'
+		, '{{moment(SupGoalSettingStart.selectedDate).format('YYYY-MM-DD')}}'
+		, '{{moment(SupGoalSettingEnd.selectedDate).format('YYYY-MM-DD')}}'
+		, '{{moment(EmGoalSettingStart.selectedDate).format('YYYY-MM-DD')}}'
+		, '{{moment(EmGoalSettingEnd.selectedDate).format('YYYY-MM-DD')}}'
+		, {{SupCoreSettingStart.selectedDate ? `'${moment(SupCoreSettingStart.selectedDate).format('YYYY-MM-DD')}'`:null}}
+		, {{SupCoreSettingEnd.selectedDate ? `'${moment(SupCoreSettingEnd.selectedDate).format('YYYY-MM-DD')}'`:null}}
+		, {{EmCoreSettingStart.selectedDate ? `'${moment(EmCoreSettingStart.selectedDate).format('YYYY-MM-DD')}'`:null}}
+		, {{EmCoreSettingEnd.selectedDate ? `'${moment(EmCoreSettingEnd.selectedDate).format('YYYY-MM-DD')}'`:null}}
+		, '{{moment(SupEvaluationStart.selectedDate).format('YYYY-MM-DD')}}'
+		, '{{moment(SupEvaluationEnd.selectedDate).format('YYYY-MM-DD')}}'
+		, '{{moment(EmEvaluationStart.selectedDate).format('YYYY-MM-DD')}}'
+		, '{{moment(EmEvaluationStartEnd.selectedDate).format('YYYY-MM-DD')}}'
+		, 'Active', Now(), '{{SelectRound.selectedOptionValue.trim()}}', '{{appsmith.store.jwt.email}}', Now(), '{{appsmith.store.jwt.email}}');

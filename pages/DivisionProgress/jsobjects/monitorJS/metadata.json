@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "monitorJS",
+    "pageId": "DivisionProgress",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "DivisionProgress_monitorJS",
+  "deleted": false,
+  "gitSyncId": "649125b34a35112df4b37a8a_6499e8232b16444427a183a2"
+}

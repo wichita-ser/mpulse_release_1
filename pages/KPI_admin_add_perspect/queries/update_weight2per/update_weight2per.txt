@@ -1,0 +1,5 @@
+UPDATE public."weight_to_perspective_setting" SET
+    "weight" = '{{this.params.weight}}',
+    "updated_date" = Now(),
+    "updated_by" = '{{appsmith.store.jwt.email}}'
+  WHERE "kpi_setting_weight_id" = {{this.params.kpi_setting_weight_id}} AND "perspective_id" = {{this.params.perspective_id}};

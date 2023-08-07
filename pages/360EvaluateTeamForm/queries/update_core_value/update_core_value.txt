@@ -1,0 +1,7 @@
+UPDATE public."core_value" SET
+		"total_score_from_supervisor" = {{this.params.totalScore}},
+    "comment_from_supervisor" = '{{InputComment.text.trim()}}',
+    "status_from_supervisor" = 'Submitted',
+    "updated_date" = Now(),
+    "updated_by" = '{{appsmith.store.jwt.email}}'
+  WHERE core_value_id = {{get_core_value.data[0].core_value_id}};

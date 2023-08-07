@@ -1,0 +1,2 @@
+INSERT INTO public."core_value" ("employee_id", "duration_setting_id", "status", "comment", "created_date", "created_by", "updated_date", "updated_by")
+  VALUES ('{{this.params.employee_id}}', {{appsmith.store.jwt.duration_setting_id}}, 'Pending', '', Now(), '{{appsmith.store.jwt.email}}', Now(), '{{appsmith.store.jwt.email}}');

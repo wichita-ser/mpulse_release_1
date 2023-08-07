@@ -1,0 +1,1 @@
+SELECT corporate_kpi_id FROM public."corporate_kpi" order by corporate_kpi_id DESC LIMIT 1;

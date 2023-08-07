@@ -1,0 +1,24 @@
+{
+  "unpublishedCollection": {
+    "name": "data",
+    "pageId": "SupervisorApproval",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [
+      {
+        "name": "employee",
+        "value": "[{\n  \"id\": \"01152\",\n  \"name\": \"Warakorn Lertwattanapong\",\n  \"nickname\": \"Jo\",\n  \"nameTH\": \"วรากรณ์ เลิศวัฒนะพงษ์\",\n  \"nicknameTH\": \"โจ\",\n  \"email\": \"warakorn@gmail.com\",\n  \"team\": \"M-Lab\"\n}, {\n  \"id\": \"01153\",\n  \"name\": \"Sainamphung Phanphet\",\n  \"nickname\": \"Phung\",\n  \"nameTH\": \"สายน้ำผึ้ง พานเพ็ด\",\n  \"nicknameTH\": \"ผึ้่ง\",\n  \"email\": \"sainamphung@gmail.com\",\n  \"team\": \"M-Lab\"\n}, {\n  \"id\": \"01154\",\n  \"name\": \"Nawaporn Manyanon\",\n  \"nickname\": \"Au\",\n  \"nameTH\": \"นวพร มะยานนท์\",\n  \"nicknameTH\": \"อุ\",\n  \"email\": \"nawaporn@gmail.com\",\n  \"team\": \"M-Lab\"\n}, {\n  \"id\": \"01155\",\n  \"name\": \"Prangprai Rattanachetchutha\",\n  \"nickname\": \"Ploy\",\n  \"nameTH\": \"แพรงพลาย รัตนนาชุตตา \",\n  \"nicknameTH\": \"พลอย\",\n  \"email\": \"prangrai@gmail.com\",\n  \"team\": \"M-Lab\"\n}, {\n  \"id\": \"01156\",\n  \"name\": \"Phumchanok Sakdakampanar\",\n  \"nickname\": \"Card\",\n  \"nameTH\": \"พุมชนก สักดาคัมนา \",\n  \"nicknameTH\": \"การ์ด\",\n  \"email\": \"phumchanok@gmail.com\",\n  \"team\": \"M-Lab\"\n}, {\n  \"id\": 20201157,\n  \"name\": \"Tanawat Limsakul\",\n  \"nickname\": \"Earth\",\n  \"nameTH\": \"ธนวัตร ลิ่มสกุล\",\n  \"nicknameTH\": \"เอิรธ์\",\n  \"email\": \"tanawat@gmail.com\",\n  \"team\": \"M-Lab\"\n}]"
+      },
+      {
+        "name": "myEmployee",
+        "value": "[{\n  \"id\": \"01152\",\n  \"name\": \"Warakorn Lertwattanapong\",\n  \"email\": \"warakorn@gmail.com\",\n  \"evaluator\": [{\n    \"id\": \"01156\",\n    \"name\": \"Phumchanok Sakdakampanar\",\n    \"email\": \"phumchanok@gmail.com\",\n    \"team\": \"M-Lab\"\n  }, {\n    \"id\": \"01155\",\n    \"name\": \"Prangprai Rattanachetchutha\",\n    \"email\": \"prangrai@gmail.com\",\n    \"team\": \"M-Lab\"\n  }],\n  \"team\": \"M-Lab\",\n  \"status\": \"Doing\"\n}, {\n  \"id\": \"01153\",\n  \"name\": \"Sainamphung Phanphet\",\n  \"email\": \"sainamphung@gmail.com\",\n  \"evaluator\": [{\n    \"id\": 20201157,\n    \"name\": \"Tanawat Limsakul\",\n    \"email\": \"tanawat@gmail.com\",\n    \"team\": \"M-Lab\"\n  }],\n  \"team\": \"M-Lab\",\n  \"status\": \"Approved\"\n}, {\n  \"id\": \"01155\",\n  \"name\": \"Prangprai Rattanachetchutha\",\n  \"email\": \"prangrai@gmail.com\",\n  \"evaluator\": [{\n    \"id\": 20201157,\n    \"name\": \"Tanawat Limsakul\",\n    \"email\": \"tanawat@gmail.com\",\n    \"team\": \"M-Lab\"\n  }],\n  \"team\": \"M-Lab\",\n  \"status\": \"Pending\"\n}]"
+      }
+    ],
+    "userPermissions": []
+  },
+  "id": "SupervisorApproval_data",
+  "deleted": false,
+  "gitSyncId": "649125b34a35112df4b37a8a_649125b94a35112df4b37fc0"
+}

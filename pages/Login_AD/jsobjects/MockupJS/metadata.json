@@ -1,0 +1,20 @@
+{
+  "unpublishedCollection": {
+    "name": "MockupJS",
+    "pageId": "Login_AD",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [
+      {
+        "name": "dataLogin",
+        "value": "[{\n  'id': 3996,\n  'employee_id': '03996',\n  'username': 'warakorn_l',\n  'password': 'Test1234!',\n  'email': 'warakorn_l@mfec.co.th',\n  'name': 'Warakorn Lertwattanapong',\n  'department': 'M-Lab',\n  'position': 'Developer',\n  'level': 'H'\n}, {\n  'id': 2955,\n  'employee_id': '02955',\n  'username': 'nawaporn',\n  'password': 'Test1234!',\n  'email': 'nawaporn_m@mfec.co.th',\n  'name': 'Nawaporn Manyanon',\n  'department': 'M-Lab',\n  'position': 'Tester',\n  'level': 'H'\n}, {\n  'id': 159,\n  'employee_id': '00159',\n  'username': 'natnaka',\n  'password': 'Test1234!',\n  'email': 'natnaka@mfec.co.th',\n  'name': 'Natnaka Sundaranaga',\n  'department': 'M-Lab',\n  'position': 'Head of M-Lab',\n  'level': 'E'\n}, {\n  'id': 2201,\n  'employee_id': '02201',\n  'username': 'sainamphung',\n  'password': 'Test1234!',\n  'email': 'sainamphung@mfec.co.th',\n  'name': 'Sainamphung Phanphet',\n  'department': 'M-Lab',\n  'position': 'Software Developer',\n  'level': 'G'\n}, {\n  'id': 4407,\n  'employee_id': '04407',\n  'username': 'natthida',\n  'password': 'Test1234!',\n  'email': 'natthida_k@mfec.co.th',\n  'name': 'Natthida Karnchanapak',\n  'department': 'People Excellence',\n  'position': 'People Business Partner Manager',\n  'level': 'E'\n}]"
+      }
+    ],
+    "userPermissions": []
+  },
+  "id": "Login_AD_MockupJS",
+  "deleted": false,
+  "gitSyncId": "649125b34a35112df4b37a8a_649125b84a35112df4b37f02"
+}

@@ -1,0 +1,2 @@
+DELETE FROM public."kpi_setting_weight"
+  WHERE kpi_setting_weight_id = {{this.params.kpi_setting_weight_id}};

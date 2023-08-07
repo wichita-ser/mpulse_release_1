@@ -1,0 +1,6 @@
+UPDATE public."kpi_evaluate" SET
+    "status" = '{{this.params.status}}',
+    "total_department_kpi" = {{this.params.total_department_kpi}},
+    "updated_date" = Now(),
+    "updated_by" = '{{appsmith.store.jwt.email}}'
+  WHERE "kpi_evaluate_id" = {{this.params.kpi_evaluate_id}};

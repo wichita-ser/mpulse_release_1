@@ -1,0 +1,2 @@
+INSERT INTO public."admins_to_department" ("admin_id", "department_id", "created_date", "created_by", "updated_date", "updated_by")
+  VALUES ({{this.params.admin_id}}, '{{this.params.department_id}}', Now(), {{appsmith.store.jwt.email}}, Now(), {{appsmith.store.jwt.email}});

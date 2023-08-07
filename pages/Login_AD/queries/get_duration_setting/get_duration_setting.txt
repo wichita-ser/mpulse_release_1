@@ -1,0 +1,13 @@
+SELECT ds.duration_setting_id, ds.evaluate_round, ds.year
+, ds.start_date, ds.end_date
+, ds.supervisor_goal_setting_start_date, ds.supervisor_goal_setting_end_date 
+, ds.employee_goal_setting_start_date, ds.employee_goal_setting_end_date
+, ds.supervisor_core_setting_start_date, ds.supervisor_core_setting_end_date
+, ds.employee_core_setting_start_date, ds.employee_core_setting_end_date
+, ds.supervisor_evaluate_setting_start_date, ds.supervisor_evaluate_setting_end_date
+, ds.employee_evaluate_setting_start_date, ds.employee_evaluate_setting_end_date, ds.status
+FROM "duration_setting" ds
+WHERE ds.status = 'Active'
+and ds.start_date <= Now() AND ds.end_date >= Now()
+order by ds.year ASC , ds.start_date ASC 
+LIMIT 1;

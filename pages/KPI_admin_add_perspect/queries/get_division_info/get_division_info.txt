@@ -1,0 +1,4 @@
+SELECT office_code, company, office_name
+FROM public."office_master"
+where office_level = 'Division' and office_code={{this.params.division_id}}
+order by office_name ASC;

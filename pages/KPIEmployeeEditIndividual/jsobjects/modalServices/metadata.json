@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "modalServices",
+    "pageId": "KPIEmployeeEditIndividual",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "KPIEmployeeEditIndividual_modalServices",
+  "deleted": false,
+  "gitSyncId": "649125b34a35112df4b37a8a_649125ba4a35112df4b38080"
+}

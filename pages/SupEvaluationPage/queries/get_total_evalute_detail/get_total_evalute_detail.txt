@@ -1,0 +1,4 @@
+SELECT Sum((score_from_supervisor*weight)/100) as total 
+FROM public."kpi_evaluate_detail" 
+where kpi_evaluate_id={{get_self_evaluate.data[0].kpi_evaluate_id}} and kpi_type='{{appsmith.store.TeamMemberScore.kpi_type}}'
+LIMIT 1;

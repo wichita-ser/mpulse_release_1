@@ -1,0 +1,1 @@
+SELECT department_kpi_id FROM public."department_kpi" order by department_kpi_id DESC LIMIT 1;

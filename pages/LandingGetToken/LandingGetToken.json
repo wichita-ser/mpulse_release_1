@@ -1,0 +1,88 @@
+{
+  "unpublishedPage": {
+    "name": "LandingGetToken",
+    "slug": "landinggettoken",
+    "layouts": [
+      {
+        "viewMode": false,
+        "dsl": {
+          "widgetName": "MainContainer",
+          "backgroundColor": "none",
+          "rightColumn": 1224,
+          "snapColumns": 64,
+          "detachFromLayout": true,
+          "widgetId": "0",
+          "topRow": 0,
+          "bottomRow": 700,
+          "containerStyle": "none",
+          "snapRows": 81,
+          "parentRowSpace": 1,
+          "type": "CANVAS_WIDGET",
+          "canExtend": true,
+          "version": 79,
+          "minHeight": 830,
+          "parentColumnSpace": 1,
+          "dynamicBindingPathList": [],
+          "leftColumn": 0
+        },
+        "layoutOnLoadActions": [
+          [
+            {
+              "id": "LandingGetToken_get_duration_setting",
+              "name": "get_duration_setting",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [],
+              "timeoutInMillisecond": 10000
+            }
+          ],
+          [
+            {
+              "id": "LandingGetToken_check_admin",
+              "name": "check_admin",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "this.params.employee_id"
+              ],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "LandingGetToken_get_employee_info",
+              "name": "get_employee_info",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "this.params.email"
+              ],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "LandingGetToken_initObj.init",
+              "name": "initObj.init",
+              "collectionId": "LandingGetToken_initObj",
+              "clientSideExecution": true,
+              "confirmBeforeExecute": false,
+              "pluginType": "JS",
+              "jsonPathKeys": [
+                "async function () {\n  let res;\n  try {\n    res = await getTokenAPI.run();\n  } catch (error) {\n    console.log('error in landing refresh page in get token api', error);\n    navigateTo('Login_AD');\n    return;\n  }\n  const {refresh_token, access_token, email} = res.payload;\n  try {\n    await get_employee_info.run({\n      'email': email.toLowerCase()\n    });\n    await get_duration_setting.run();\n    await check_admin.run({\n      'employee_id': get_employee_info.data[0].employee_id\n    });\n  } catch (error) {\n    console.log('error in landing refresh page run database', error);\n    navigateTo('Login_AD');\n    return;\n  }\n  const isAdmin = check_admin.data[0].total > 0 ? true : false;\n  const isNoDuration = get_duration_setting.data.length < 1;\n  const isActive = validateDuration.handleValidateDuration(get_duration_setting.data);\n  if ((!isActive || isNoDuration) && !isAdmin) {\n    showModal('ModalNotice');\n    return;\n  } else if (isNoDuration && isAdmin) {\n    storeValue('jwt', {\n      'employee_id': get_employee_info.data[0].employee_id,\n      'email': get_employee_info.data[0].email,\n      'name': get_employee_info.data[0].firstname_en + ' ' + get_employee_info.data[0].lastname_en,\n      'department_name': get_employee_info.data[0].department_name,\n      'division_name': get_employee_info.data[0].division_name,\n      'position': get_employee_info.data[0].position_name,\n      'level': get_employee_info.data[0].level,\n      'isAdmin': isAdmin,\n      'isSupervisor': get_employee_info.data[0].num_subordinate > 0 ? true : false,\n      'token': access_token,\n      'refreshToken': refresh_token\n    });\n    navigateTo('SystemSetting', {}, 'SAME_WINDOW');\n    return;\n  }\n  storeValue('jwt', {\n    'employee_id': get_employee_info.data[0].employee_id,\n    'email': get_employee_info.data[0].email,\n    'name': get_employee_info.data[0].firstname_en + ' ' + get_employee_info.data[0].lastname_en,\n    'department_name': get_employee_info.data[0].department_name,\n    'division_name': get_employee_info.data[0].division_name,\n    'department_id': get_employee_info.data[0].department_id,\n    'division_id': get_employee_info.data[0].division_id,\n    'position': get_employee_info.data[0].position_name,\n    'level': get_employee_info.data[0].level,\n    'duration_setting_id': get_duration_setting.data[0].duration_setting_id,\n    'year': get_duration_setting.data[0].year,\n    'evaluate_round': get_duration_setting.data[0].evaluate_round,\n    'start_date': get_duration_setting.data[0].start_date,\n    'end_date': get_duration_setting.data[0].end_date,\n    'supervisor_goal_setting_start_date': get_duration_setting.data[0].supervisor_goal_setting_start_date,\n    'supervisor_goal_setting_end_date': get_duration_setting.data[0].supervisor_goal_setting_end_date,\n    'employee_goal_setting_start_date': get_duration_setting.data[0].employee_goal_setting_start_date,\n    'employee_goal_setting_end_date': get_duration_setting.data[0].employee_goal_setting_end_date,\n    'supervisor_core_setting_start_date': get_duration_setting.data[0].supervisor_core_setting_start_date,\n    'supervisor_core_setting_end_date': get_duration_setting.data[0].supervisor_core_setting_end_date,\n    'employee_core_setting_start_date': get_duration_setting.data[0].employee_core_setting_start_date,\n    'employee_core_setting_end_date': get_duration_setting.data[0].employee_core_setting_end_date,\n    'supervisor_evaluate_setting_start_date': get_duration_setting.data[0].supervisor_evaluate_setting_start_date,\n    'supervisor_evaluate_setting_end_date': get_duration_setting.data[0].supervisor_evaluate_setting_end_date,\n    'employee_evaluate_setting_start_date': get_duration_setting.data[0].employee_evaluate_setting_start_date,\n    'employee_evaluate_setting_end_date': get_duration_setting.data[0].employee_evaluate_setting_end_date,\n    'isAdmin': isAdmin,\n    'isSupervisor': get_employee_info.data[0].num_subordinate > 0 ? true : false,\n    'token': access_token,\n    'refreshToken': refresh_token\n  });\n  if (!isActive && isAdmin) {\n    navigateTo('SystemSetting', {}, 'SAME_WINDOW');\n  } else {\n    showAlert('Login Success', 'success');\n    navigateTo('Home', {}, 'SAME_WINDOW');\n  }\n}"
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ]
+        ],
+        "layoutOnLoadActionErrors": [],
+        "validOnPageLoadActions": true,
+        "id": "LandingGetToken",
+        "deleted": false,
+        "policies": [],
+        "userPermissions": []
+      }
+    ],
+    "userPermissions": [],
+    "policies": [],
+    "isHidden": false
+  },
+  "deleted": false,
+  "gitSyncId": "64a41ea1c5ad8c54598cf856_64a41ea3c5ad8c54598cf99b"
+}

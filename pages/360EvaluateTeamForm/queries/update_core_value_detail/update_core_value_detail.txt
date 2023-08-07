@@ -1,0 +1,5 @@
+UPDATE public."core_value_detail" SET
+     "score" = {{this.params.score}},
+    "updated_date" = Now(),
+    "updated_by" = '{{appsmith.store.jwt.email}}'
+  WHERE core_value_id = {{appsmith.URL.queryParams.core_value_id}} and "choice" = {{this.params.choice}} AND evalutor_id = '{{this.params.employee_id}}';

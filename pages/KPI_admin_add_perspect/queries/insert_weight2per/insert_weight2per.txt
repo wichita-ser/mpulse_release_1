@@ -1,0 +1,2 @@
+INSERT INTO public."weight_to_perspective_setting" ("kpi_setting_weight_id", "perspective_id", "weight", "created_date", "updated_date", "created_by", "updated_by")
+  VALUES ({{this.params.kpi_setting_weight_id}}, {{this.params.perspective_id}}, '{{this.params.weight}}', Now(), Now(), '{{appsmith.store.jwt.email}}', '{{appsmith.store.jwt.email}}');

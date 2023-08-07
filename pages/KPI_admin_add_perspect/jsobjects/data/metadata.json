@@ -1,0 +1,24 @@
+{
+  "unpublishedCollection": {
+    "name": "data",
+    "pageId": "KPI_admin_add_perspect",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [
+      {
+        "name": "divisionData",
+        "value": "{\n  \"Business Innovation Unit\": [\"Innovation Lab\", \"Venture Lab\", \"M-Lab\", \"Product\"],\n  \"Corporate Strategy Planning and Management\": [\"Center of excellent\", \"Partner Relation\", \"Risk and Compliance\"]\n}"
+      },
+      {
+        "name": "departmentOptions",
+        "value": "[{\n  \"label\": \"Corporate Finance Operation\",\n  \"value\": \"Corporate Finance Operation\"\n}, {\n  \"label\": \"Corporate Operation Management\",\n  \"value\": \"Corporate Operation Management\"\n}, {\n  \"label\": \"Enterprise Solutions\",\n  \"value\": \"Enterprise Solutions\"\n}, {\n  \"label\": \"Executive \",\n  \"value\": \"Executive\"\n}, {\n  \"label\": \"Corporate Strategy Planning and Management\",\n  \"value\": \"Corporate Strategy Planning and Management\"\n}, {\n  \"label\": \"Business Innovation Unit\",\n  \"value\": \"Business Innovation Unit\"\n}, {\n  \"label\": \"Internal Audit\",\n  \"value\": \"Internal Audit\"\n}, {\n  \"label\": \"MTIS Business Unit\",\n  \"value\": \"MTIS Business Unit\"\n}, {\n  \"label\": \"Commercial Business Sales\",\n  \"value\": \"Commercial Business Sales\"\n}, {\n  \"label\": \"Government Business Sales\",\n  \"value\": \"Government Business Sales\"\n}, {\n  \"label\": \"Hybrid Infrastructure Services\",\n  \"value\": \"Hybrid Infrastructure Services\"\n}, {\n  \"label\": \"Telco Business Unit\",\n  \"value\": \"Telco Business Unit\"\n}, {\n  \"label\": \"People Excellence\",\n  \"value\": \"People Excellence\"\n}]"
+      }
+    ],
+    "userPermissions": []
+  },
+  "id": "KPI_admin_add_perspect_data",
+  "deleted": false,
+  "gitSyncId": "649125b34a35112df4b37a8a_649125bb4a35112df4b381ec"
+}

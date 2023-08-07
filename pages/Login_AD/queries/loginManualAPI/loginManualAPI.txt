@@ -1,0 +1,4 @@
+{
+	"username": InputUsername.inputText,
+	"password": InputPassword.inputText
+}

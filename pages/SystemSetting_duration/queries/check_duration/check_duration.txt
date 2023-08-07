@@ -1,0 +1,3 @@
+SELECT * 
+FROM public."duration_setting" 
+where year = {{SelectYear.selectedOptionValue}} AND evaluate_round = '{{SelectRound.selectedOptionValue}}';
