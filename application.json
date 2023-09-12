@@ -157,6 +157,19 @@
   "appIsExample": false,
   "unreadCommentThreads": 0,
   "clonedFromApplicationId": "64a3e038c5ad8c54598cf01b",
+  "unpublishedApplicationDetail": {
+    "navigationSetting": {
+      "showNavbar": true,
+      "orientation": "top",
+      "navStyle": "stacked",
+      "position": "static",
+      "itemStyle": "text",
+      "colorStyle": "theme",
+      "logoAssetId": "",
+      "logoConfiguration": "logoAndApplicationTitle",
+      "showSignIn": true
+    }
+  },
   "color": "#ECECEC",
   "icon": "bus",
   "unpublishedAppLayout": {
